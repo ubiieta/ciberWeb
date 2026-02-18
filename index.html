@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proyectos</title>
+    <style>
+        :root {
+            --bg: #0b1020;
+            --bg2: #0f1630;
+            --ink: #e8f0ff;
+            --muted: #a9b8dd;
+            --accent: #7cf7d4;
+            --accent2: #ffcf5a;
+            --card: #141c3b;
+            --card2: #101634;
+            --shadow: #050814;
+            --pixel: 4px;
+            /* tamaño del “pixel” */
+            --radius: 0px;
+            /* pixel art: sin redondeo */
+            --gap: 22px;
+            --cardW: min(86vw, 520px);
+            --cardH: min(70vh, 360px);
+            --snapPad: clamp(18px, 4vw, 44px);
+        }
+
+        /* Fondo con “ruido” pixelado */
+        body {
+            margin: 0;
+            color: var(--ink);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+            background:
+                radial-gradient(1200px 800px at 20% 10%, #1b2a66 0%, transparent 60%),
+                radial-gradient(900px 700px at 90% 70%, #1b5a66 0%, transparent 55%),
+                linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+            min-height: 100vh;
+            overflow: hidden;
+            /* el scroll lo lleva el carrusel */
+        }
+
+        /* Overlay de “grain” cuadraditos */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: .20;
+            background:
+                linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px) 0 0/12px 12px,
+                linear-gradient(0deg, rgba(255, 255, 255, .06) 1px, transparent 1px) 0 0/12px 12px;
+            mix-blend-mode: overlay;
+        }
+
+        header {
+            padding: clamp(16px, 3vw, 28px) clamp(16px, 4vw, 44px) 10px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(18px, 2.6vw, 26px);
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+
+        .hint {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.35;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            user-select: none;
+        }
+
+        /* Botones pixel */
+        .btn {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: var(--ink);
+            font: inherit;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .pixel-btn {
+            position: relative;
+            padding: 10px 12px;
+            background: var(--card);
+            box-shadow:
+                0 calc(var(--pixel)*1) 0 0 #00000055,
+                calc(var(--pixel)*1) calc(var(--pixel)*1) 0 0 #00000055;
+            outline: var(--pixel) solid #00000066;
+            outline-offset: calc(var(--pixel)*-1);
+            transition: transform .08s ease;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            min-width: 44px;
+            justify-content: center;
+        }
+
+        .pixel-btn:active {
+            transform: translate(var(--pixel), var(--pixel));
+        }
+
+        .pixel-btn:focus-visible {
+            outline: var(--pixel) solid var(--accent);
+            outline-offset: calc(var(--pixel)*-1);
+        }
+
+        .kbd {
+            color: var(--muted);
+            font-size: 12px;
+            padding-left: 6px;
+        }
+
+        main {
+            height: calc(100vh - 86px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Carrusel horizontal con snap */
+        .rail {
+            flex: 1;
+            display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            gap: var(--gap);
+            padding: 18px var(--snapPad) 28px;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            scrollbar-color: #3a4a86 transparent;
+        }
+
+        .rail::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .rail::-webkit-scrollbar-thumb {
+            background: #3a4a86;
+            border-radius: 999px;
+        }
+
+        .rail::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .card {
+            scroll-snap-align: center;
+            width: var(--cardW);
+            height: var(--cardH);
+            flex: 0 0 auto;
+            position: relative;
+            background: linear-gradient(180deg, var(--card) 0%, var(--card2) 100%);
+            /* borde pixelado */
+            outline: var(--pixel) solid #00000088;
+            outline-offset: calc(var(--pixel) * -1);
+            box-shadow:
+                0 calc(var(--pixel)*2) 0 0 #00000066,
+                calc(var(--pixel)*2) calc(var(--pixel)*2) 0 0 #00000066,
+                0 0 0 calc(var(--pixel)*2) #0a0f28;
+            image-rendering: pixelated;
+            overflow: hidden;
+        }
+
+        /* patrón pixel (dithering) */
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            opacity: .35;
+            background:
+                linear-gradient(90deg, rgba(255, 255, 255, .07) 50%, transparent 50%) 0 0/12px 12px,
+                linear-gradient(0deg, rgba(0, 0, 0, .12) 50%, transparent 50%) 0 0/12px 12px;
+            mix-blend-mode: overlay;
+            pointer-events: none;
+        }
+
+        /* “ribete” superior tipo UI retro */
+        .card::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 44px;
+            background:
+                linear-gradient(90deg, #00000055 0 8px, transparent 8px),
+                linear-gradient(180deg, rgba(255, 255, 255, .10), rgba(0, 0, 0, .10));
+            opacity: .9;
+            pointer-events: none;
+        }
+
+        .card-inner {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 16px 16px 14px;
+            gap: 12px;
+        }
+
+        .badge-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding-top: 6px;
+        }
+
+        .proj {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+
+        .pixel-dot {
+            width: 16px;
+            height: 16px;
+            background: var(--accent);
+            box-shadow:
+                0 var(--pixel) 0 0 #00000055,
+                var(--pixel) var(--pixel) 0 0 #00000055;
+            outline: var(--pixel) solid #00000066;
+            outline-offset: calc(var(--pixel)*-1);
+        }
+
+        .tag {
+            font-size: 12px;
+            color: var(--muted);
+            padding: 6px 8px;
+            background: #0b1230;
+            outline: var(--pixel) solid #00000066;
+            outline-offset: calc(var(--pixel)*-1);
+            box-shadow: 0 var(--pixel) 0 0 #00000055;
+            white-space: nowrap;
+        }
+
+        .big {
+            margin: 0;
+            font-size: clamp(22px, 4.3vw, 34px);
+            line-height: 1.05;
+            letter-spacing: .02em;
+        }
+
+        .desc {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.55;
+            max-width: 58ch;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .stat {
+            background: #0b1230;
+            outline: var(--pixel) solid #00000066;
+            outline-offset: calc(var(--pixel)*-1);
+            box-shadow:
+                0 var(--pixel) 0 0 #00000055,
+                var(--pixel) var(--pixel) 0 0 #00000055;
+            padding: 10px;
+            min-height: 54px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .stat b {
+            font-size: 12px;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+
+        .stat span {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .footer {
+            padding: 0 var(--snapPad) 18px;
+            color: var(--muted);
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        /* Responsive */
+        @media (max-width: 560px) {
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                height: calc(100vh - 96px);
+            }
+        }
+
+        /* Reduce motion */
+        @media (prefers-reduced-motion: reduce) {
+            .rail {
+                scroll-behavior: auto;
+            }
+
+            .pixel-btn {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Lista de proyectos</h1>
+            <p class="hint">Desliza horizontalmente o usa ◀/▶. El scroll hace “snap” de uno en uno.</p>
+        </div>
+
+        <div class="controls">
+            <button class="btn pixel-btn" id="prev" aria-label="Proyecto anterior">◀ <span class="kbd">←</span></button>
+            <button class="btn pixel-btn" id="next" aria-label="Siguiente proyecto">▶ <span
+                    class="kbd">→</span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="rail" id="rail" aria-label="Carrusel de proyectos">
+            <!-- PROYECTO 1 -->
+            <article class="card" data-project="P1">
+                <div class="card-inner">
+                    <div class="badge-row">
+                        <div class="proj"><span class="pixel-dot"></span> <span>P1</span></div>
+                        <div class="tag">pixel-card</div>
+                    </div>
+
+                    <h2 class="big">Proyecto P1</h2>
+                    <p class="desc">
+                        Descripción breve del proyecto. Puedes poner stack, objetivo y estado.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat"><b>Estado</b><span>En progreso</span></div>
+                        <div class="stat"><b>Stack</b><span>HTML/CSS/JS</span></div>
+                        <div class="stat"><b>Tipo</b><span>Demo</span></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROYECTO 2 -->
+            <article class="card" data-project="P2">
+                <div class="card-inner">
+                    <div class="badge-row">
+                        <div class="proj"><span class="pixel-dot" style="background:var(--accent2)"></span>
+                            <span>P2</span></div>
+                        <div class="tag">pixel-card</div>
+                    </div>
+
+                    <h2 class="big">Proyecto P2</h2>
+                    <p class="desc">
+                        Otra carta. El patrón y el borde están hechos para verse “retro/pixel”.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat"><b>Estado</b><span>Idea</span></div>
+                        <div class="stat"><b>Stack</b><span>React</span></div>
+                        <div class="stat"><b>Tipo</b><span>App</span></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROYECTO 3 -->
+            <article class="card" data-project="P3">
+                <div class="card-inner">
+                    <div class="badge-row">
+                        <div class="proj"><span class="pixel-dot" style="background:#a78bfa"></span> <span>P3</span>
+                        </div>
+                        <div class="tag">pixel-card</div>
+                    </div>
+
+                    <h2 class="big">Proyecto P3</h2>
+                    <p class="desc">
+                        Aquí podrías añadir enlaces, capturas (con pixelado) o acciones.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat"><b>Estado</b><span>Hecho</span></div>
+                        <div class="stat"><b>Stack</b><span>Node</span></div>
+                        <div class="stat"><b>Tipo</b><span>API</span></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROYECTO 4 -->
+            <article class="card" data-project="P4">
+                <div class="card-inner">
+                    <div class="badge-row">
+                        <div class="proj"><span class="pixel-dot" style="background:#fb7185"></span> <span>P4</span>
+                        </div>
+                        <div class="tag">pixel-card</div>
+                    </div>
+
+                    <h2 class="big">Proyecto P4</h2>
+                    <p class="desc">
+                        Añade tantos proyectos como quieras duplicando un &lt;article class="card"&gt;.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat"><b>Estado</b><span>Backlog</span></div>
+                        <div class="stat"><b>Stack</b><span>Python</span></div>
+                        <div class="stat"><b>Tipo</b><span>Data</span></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <div class="footer">
+            <div>Tip: trackpad/shift+rueda para scroll horizontal.</div>
+            <div id="pos">P1</div>
+        </div>
+    </main>
+
+    <script>
+        const rail = document.getElementById('rail');
+        const cards = Array.from(rail.querySelectorAll('.card'));
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        const pos = document.getElementById('pos');
+
+        function centerToCard(index) {
+            const card = cards[index];
+            if (!card) return;
+            card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            pos.textContent = card.dataset.project || `P${index + 1}`;
+        }
+
+        // Averigua qué carta está más centrada
+        function getCenteredIndex() {
+            const railRect = rail.getBoundingClientRect();
+            const railCenter = railRect.left + railRect.width / 2;
+
+            let best = 0, bestDist = Infinity;
+            cards.forEach((c, i) => {
+                const r = c.getBoundingClientRect();
+                const cCenter = r.left + r.width / 2;
+                const d = Math.abs(cCenter - railCenter);
+                if (d < bestDist) { bestDist = d; best = i; }
+            });
+            return best;
+        }
+
+        prev.addEventListener('click', () => {
+            const i = getCenteredIndex();
+            centerToCard(Math.max(0, i - 1));
+        });
+
+        next.addEventListener('click', () => {
+            const i = getCenteredIndex();
+            centerToCard(Math.min(cards.length - 1, i + 1));
+        });
+
+        // Teclas
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') { e.preventDefault(); prev.click(); }
+            if (e.key === 'ArrowRight') { e.preventDefault(); next.click(); }
+        }, { passive: false });
+
+        // Actualiza el indicador al hacer scroll manual
+        let t;
+        rail.addEventListener('scroll', () => {
+            clearTimeout(t);
+            t = setTimeout(() => {
+                const i = getCenteredIndex();
+                pos.textContent = cards[i]?.dataset.project || `P${i + 1}`;
+            }, 80);
+        }, { passive: true });
+
+        // Inicial
+        centerToCard(0);
+    </script>
+</body>
+
+</html>
