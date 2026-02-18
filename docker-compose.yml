@@ -1,16 +1,12 @@
 services:
-  ciberWeb:
-    build:
-    container_name: ciberWeb
+  ciberweb:
+    build: .
+    container_name: ciberweb
     env_file: .env
     restart: always
     networks:
       - web
-    healthcheck:
-      test: ["CMD", "curl", "-fsS", "http://localhost:80/health"]
-      interval: 30s
-      timeout: 5s
-      retries: 3
-  networks:
-    web:
-     external: true
+
+networks:
+  web:
+    external: true
