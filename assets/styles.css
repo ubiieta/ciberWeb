@@ -8,7 +8,7 @@
   --bg1: #07070a;
 
   /* tarjetas más claras que el fondo */
-  --panel: #15ff00;
+  --panel: #288b1f;
   --panel2: #101116;
 
   /* texto */
@@ -25,8 +25,8 @@
   --gap: 22px;
   --snapPad: clamp(24px, 5vw, 64px);
 
-  --cardW: min(86vw, 520px);
-  --cardH: min(70vh, 360px);
+  --cardW: min(86vw, 620px);
+  --cardH: min(20vh, 360px);
 
   --dim: 0.55;
 }
@@ -202,14 +202,14 @@ body::before {
   transform: scale(1);
   filter: none;
 
-  outline: var(--pixel) solid rgba(65, 241, 255, .35);
+  outline: var(--pixel) solid rgba(0, 236, 43, 0.736);
   outline-offset: calc(var(--pixel) * -1);
 
   box-shadow:
     0 calc(var(--pixel)*2) 0 0 rgba(0, 0, 0, .70),
     calc(var(--pixel)*2) calc(var(--pixel)*2) 0 0 rgba(0, 0, 0, .70),
-    0 0 0 calc(var(--pixel)*2) rgba(65, 241, 255, .18),
-    0 0 22px rgba(65, 241, 255, .18);
+    0 0 0 calc(var(--pixel)*2) rgba(103, 255, 65, 0.18),
+    0 0 22px rgba(65, 255, 75, 0.18);
 }
 
 /* ======================================================
@@ -282,12 +282,12 @@ body::before {
   opacity: 1;
   transform: scale(1);
   filter: none;
-  outline: var(--pixel) solid rgba(65, 241, 255, .35);
+  outline: var(--pixel) solid rgba(37, 189, 23, 0.35);
   box-shadow:
     0 calc(var(--pixel)*2) 0 0 rgba(0, 0, 0, .70),
     calc(var(--pixel)*2) calc(var(--pixel)*2) 0 0 rgba(0, 0, 0, .70),
-    0 0 0 calc(var(--pixel)*2) rgba(65, 241, 255, .18),
-    0 0 22px rgba(65, 241, 255, .18);
+    0 0 0 calc(var(--pixel)*2) rgba(65, 255, 87, 0.18),
+    0 0 22px rgba(125, 255, 65, 0.18);
 }
 
 .card:focus-visible {
@@ -372,4 +372,65 @@ body::before {
   .nav-arrow {
     display: none;
   }
+}
+/* ======================================================
+   TITULO SUPERIOR
+====================================================== */
+
+.title-wrapper {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.main-title {
+  margin: 0;
+  font-size: clamp(20px, 3vw, 36px);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  color: var(--ink);
+
+  /* efecto pixel glow */
+  text-shadow:
+    0 3px 0 rgba(0, 0, 0, .6),
+    0 0 20px rgba(65, 241, 255, .15);
+
+  padding: 10px 24px;
+
+  background: linear-gradient(180deg, #14151a, #0b0c10);
+
+  outline: var(--pixel) solid rgba(0, 0, 0, .6);
+  outline-offset: calc(var(--pixel) * -1);
+
+  box-shadow:
+    0 var(--pixel) 0 0 rgba(0, 0, 0, .6),
+    var(--pixel) var(--pixel) 0 0 rgba(0, 0, 0, .6),
+    0 0 25px rgba(65, 241, 255, .15);
+}
+/* =========================
+   DOT SEGÚN ESTADO
+========================= */
+
+.dot.progreso{
+  background: #ff3b3b;
+  /* rojo */
+  box-shadow:
+    0 var(--pixel) 0 0 rgba(0, 0, 0, .65),
+    var(--pixel) var(--pixel) 0 0 rgba(0, 0, 0, .65),
+    0 0 12px rgba(255, 59, 59, .35);
+}
+
+.dot.finalizado {
+  background: #35ff6b;
+  /* verde */
+  box-shadow:
+    0 var(--pixel) 0 0 rgba(0, 0, 0, .65),
+    var(--pixel) var(--pixel) 0 0 rgba(0, 0, 0, .65),
+    0 0 12px rgba(53, 255, 107, .35);
 }

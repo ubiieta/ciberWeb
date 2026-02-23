@@ -24,17 +24,26 @@ window.addEventListener('DOMContentLoaded', () => setActive(0));
 document.getElementById('prev')?.addEventListener('click', () => setActive(currentIndex - 1));
 document.getElementById('next')?.addEventListener('click', () => setActive(currentIndex + 1));
 
-// Teclado (flechas)
+// Teclado (flechas + enter)
 window.addEventListener('keydown', (e) => {
-    // Si estás escribiendo en un input/textarea, no interceptamos flechas
     const tag = document.activeElement?.tagName;
     if (tag === 'INPUT' || tag === 'TEXTAREA' || document.activeElement?.isContentEditable) return;
 
     if (e.key === 'ArrowLeft') {
         e.preventDefault();
         setActive(currentIndex - 1);
-    } else if (e.key === 'ArrowRight') {
+        return;
+    }
+
+    if (e.key === 'ArrowRight') {
         e.preventDefault();
         setActive(currentIndex + 1);
+        return;
+    }
+
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        const activeCard = cards[currentIndex];
+        activeCard?.click();
     }
 });
