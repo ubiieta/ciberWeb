@@ -1,0 +1,375 @@
+/* ======================================================
+   VARIABLES – TEMA VIDEOJUEGO (ALTO CONTRASTE + NEÓN)
+====================================================== */
+
+:root {
+  /* fondo más profundo */
+  --bg0: #1b2d13;
+  --bg1: #07070a;
+
+  /* tarjetas más claras que el fondo */
+  --panel: #15ff00;
+  --panel2: #101116;
+
+  /* texto */
+  --ink: #f2f2f2;
+  --muted: #b8b8b8;
+
+  --line: #2f323a;
+  --shadow: #000;
+
+  /* acento neón retro */
+  --accent: #d42727;
+
+  --pixel: 4px;
+  --gap: 22px;
+  --snapPad: clamp(24px, 5vw, 64px);
+
+  --cardW: min(86vw, 520px);
+  --cardH: min(70vh, 360px);
+
+  --dim: 0.55;
+}
+
+/* ======================================================
+   BASE
+====================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  background:
+    radial-gradient(1000px 700px at 15% 10%, rgba(65, 241, 255, .10) 0%, transparent 60%),
+    radial-gradient(800px 600px at 90% 70%, rgba(65, 241, 255, .06) 0%, transparent 55%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+}
+
+/* grid pixelado sutil */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px) 0 0/12px 12px,
+    linear-gradient(0deg, rgba(255, 255, 255, .05) 1px, transparent 1px) 0 0/12px 12px;
+  mix-blend-mode: overlay;
+}
+
+/* ======================================================
+   LAYOUT
+====================================================== */
+
+.screen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+  
+}
+
+/* ======================================================
+   CARRUSEL
+====================================================== */
+.rail {
+  width: 100vw;
+  /* ocupa TODO el ancho visible */
+  max-width: none;
+  /* quita el límite de 1400px */
+  margin: 0;
+  /* quita el centrado tipo “caja” */
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap);
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  padding: 18px var(--snapPad);
+
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: thin;
+  scrollbar-color: #3a3a3a transparent;
+
+  white-space: nowrap;
+
+  /* IMPORTANTE: no uses 50% aquí si quieres “hasta el final” */
+  scroll-padding-left: var(--snapPad);
+  scroll-padding-right: var(--snapPad);
+}
+
+.rail::-webkit-scrollbar {
+  height: 10px;
+}
+
+.rail::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 999px;
+}
+
+.rail::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ======================================================
+   CARTAS PIXEL ART
+====================================================== */
+
+.card {
+  flex: 0 0 auto;
+  width: var(--cardW);
+  height: var(--cardH);
+
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  background: linear-gradient(180deg, var(--panel), var(--panel2));
+  image-rendering: pixelated;
+
+  outline: var(--pixel) solid rgba(0, 0, 0, .55);
+  outline-offset: calc(var(--pixel) * -1);
+
+  box-shadow:
+    0 calc(var(--pixel)*2) 0 0 rgba(0, 0, 0, .65),
+    calc(var(--pixel)*2) calc(var(--pixel)*2) 0 0 rgba(0, 0, 0, .65),
+    0 0 0 calc(var(--pixel)*2) rgba(10, 10, 14, .9),
+    0 18px 40px rgba(0, 0, 0, .55);
+
+  scroll-snap-align: center;
+  scroll-margin-left: var(--snapPad);
+  scroll-margin-right: var(--snapPad);
+
+  opacity: var(--dim);
+  transform: scale(.96);
+  filter: saturate(.2) contrast(1.05);
+
+  transition:
+    opacity .18s ease,
+    transform .18s ease,
+    filter .18s ease,
+    box-shadow .18s ease;
+}
+
+/* patrón pixel + leve bevel */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .07) 50%, transparent 50%) 0 0/12px 12px,
+    linear-gradient(0deg, rgba(0, 0, 0, .22) 50%, transparent 50%) 0 0/12px 12px,
+    linear-gradient(180deg, rgba(255, 255, 255, .06), transparent 50%, rgba(0, 0, 0, .22));
+  pointer-events: none;
+}
+
+/* barra superior retro */
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .10), rgba(0, 0, 0, .25));
+  pointer-events: none;
+}
+
+/* CARTA ACTIVA */
+.card.is-active {
+  opacity: 1;
+  transform: scale(1);
+  filter: none;
+
+  outline: var(--pixel) solid rgba(65, 241, 255, .35);
+  outline-offset: calc(var(--pixel) * -1);
+
+  box-shadow:
+    0 calc(var(--pixel)*2) 0 0 rgba(0, 0, 0, .70),
+    calc(var(--pixel)*2) calc(var(--pixel)*2) 0 0 rgba(0, 0, 0, .70),
+    0 0 0 calc(var(--pixel)*2) rgba(65, 241, 255, .18),
+    0 0 22px rgba(65, 241, 255, .18);
+}
+
+/* ======================================================
+   CONTENIDO INTERNO
+====================================================== */
+
+.card-inner {
+  position: relative;
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.proj {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background: var(--accent);
+  outline: var(--pixel) solid rgba(0, 0, 0, .65);
+  outline-offset: calc(var(--pixel)*-1);
+  box-shadow:
+    0 var(--pixel) 0 0 rgba(0, 0, 0, .65),
+    var(--pixel) var(--pixel) 0 0 rgba(0, 0, 0, .65),
+    0 0 12px rgba(65, 241, 255, .25);
+}
+
+.big {
+  margin: 0;
+  font-size: clamp(22px, 4vw, 34px);
+  line-height: 1.05;
+  text-shadow:
+    0 2px 0 rgba(0, 0, 0, .55),
+    0 0 18px rgba(65, 241, 255, .10);
+}
+
+.desc {
+  margin: 0;
+  color: rgba(242, 242, 242, .72);
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 60ch;
+}
+
+/* ======================================================
+   HOVER + ACCESIBILIDAD
+====================================================== */
+
+.card,
+.rail {
+  user-select: none;
+}
+
+/* Hover highlight */
+.rail:hover .card {
+  transform: scale(.96);
+  filter: saturate(.2);
+}
+
+.rail:hover .card:hover {
+  opacity: 1;
+  transform: scale(1);
+  filter: none;
+  outline: var(--pixel) solid rgba(65, 241, 255, .35);
+  box-shadow:
+    0 calc(var(--pixel)*2) 0 0 rgba(0, 0, 0, .70),
+    calc(var(--pixel)*2) calc(var(--pixel)*2) 0 0 rgba(0, 0, 0, .70),
+    0 0 0 calc(var(--pixel)*2) rgba(65, 241, 255, .18),
+    0 0 22px rgba(65, 241, 255, .18);
+}
+
+.card:focus-visible {
+  opacity: 1;
+  transform: scale(1);
+  filter: none;
+  outline: var(--pixel) solid var(--accent);
+  outline-offset: calc(var(--pixel) * -1);
+}
+
+/* ======================================================
+   REDUCED MOTION
+====================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .rail {
+    scroll-behavior: auto;
+  }
+
+  .card {
+    transition: none;
+  }
+}
+/* ======================================================
+   FLECHAS LATERALES
+====================================================== */
+
+.nav-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 64px;
+  height: 64px;
+
+  font-size: 42px;
+  font-family: inherit;
+  color: var(--accent);
+
+  background: linear-gradient(180deg, #15161a, #0c0d11);
+  border: none;
+  cursor: pointer;
+
+  outline: var(--pixel) solid rgba(0, 0, 0, .6);
+  outline-offset: calc(var(--pixel) * -1);
+
+  box-shadow:
+    0 var(--pixel) 0 0 rgba(0, 0, 0, .6),
+    var(--pixel) var(--pixel) 0 0 rgba(0, 0, 0, .6),
+    0 0 20px rgba(65, 241, 255, .15);
+
+  transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+
+  z-index: 100;
+}
+
+/* Posición */
+.nav-arrow.left {
+  left: 24px;
+}
+
+.nav-arrow.right {
+  right: 24px;
+}
+
+/* Hover */
+.nav-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow:
+    0 var(--pixel) 0 0 rgba(0, 0, 0, .6),
+    var(--pixel) var(--pixel) 0 0 rgba(0, 0, 0, .6),
+    0 0 30px rgba(65, 241, 255, .35);
+}
+
+/* Active (click) */
+.nav-arrow:active {
+  transform: translateY(-50%) scale(.95);
+}
+
+/* Opcional: ocultarlas en móvil */
+@media (max-width: 768px) {
+  .nav-arrow {
+    display: none;
+  }
+}
