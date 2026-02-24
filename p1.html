@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Práctica en clase - 1</title>
+    <h1 class="title">
+    
+        <a href="index.html" class="home-btn">HOME</a>
+    </h1>
     <style>
         :root {
             --bg0: #063110;
@@ -216,6 +219,29 @@
         a {
             color: var(--accent);
         }
+        .home-btn {
+    padding: 8px 14px;
+    font-size: 24px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink);
+    background: linear-gradient(180deg, var(--panel), var(--panel2));
+    outline: var(--pixel) solid rgba(0, 0, 0, .6);
+    outline-offset: calc(var(--pixel) * -1);
+    box-shadow:
+        0 var(--pixel) 0 0 rgba(0, 0, 0, .6),
+        var(--pixel) var(--pixel) 0 0 rgba(0, 0, 0, .6);
+    transition: transform .08s ease;
+}
+
+.home-btn:hover {
+    transform: translateY(-2px);
+}
+
+.home-btn:active {
+    transform: translateY(2px);
+}
     </style>
 </head>
 
@@ -369,4 +395,4 @@
     </main>
 </body>
 
-</html>x
+</html>

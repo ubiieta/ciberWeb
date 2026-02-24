@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loading...</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    video {
+      width: 100%;
+      max-width: 900px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <video id="rick" autoplay playsinline>
+    <source src="assets/rickroll.mp4" type="video/mp4">
+  </video>
+
+  <script>
+    const video = document.getElementById("rick");
+
+    // Forzar reproducción por si el navegador la bloquea
+    video.play().catch(() => {
+      // Si falla, lo intenta en mute (esto siempre funciona)
+      video.muted = true;
+      video.play();
+    });
+  </script>
+
+</body>
+
+</html>

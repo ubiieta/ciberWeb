@@ -78,19 +78,17 @@ body::before {
   justify-content: center;
   align-items: center;
   min-height: 0;
-  
 }
 
 /* ======================================================
    CARRUSEL
+   (FIX: padding lateral dinámico para centrar 1ª y última)
 ====================================================== */
+
 .rail {
   width: 100vw;
-  /* ocupa TODO el ancho visible */
   max-width: none;
-  /* quita el límite de 1400px */
   margin: 0;
-  /* quita el centrado tipo “caja” */
 
   display: flex;
   flex-wrap: nowrap;
@@ -104,7 +102,11 @@ body::before {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 
-  padding: 18px var(--snapPad);
+  /* ✅ clave: permite centrar también primera y última */
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: max(var(--snapPad), calc(50vw - (var(--cardW) / 2)));
+  padding-right: max(var(--snapPad), calc(50vw - (var(--cardW) / 2)));
 
   -webkit-overflow-scrolling: touch;
 
@@ -112,10 +114,6 @@ body::before {
   scrollbar-color: #3a3a3a transparent;
 
   white-space: nowrap;
-
-  /* IMPORTANTE: no uses 50% aquí si quieres “hasta el final” */
-  scroll-padding-left: var(--snapPad);
-  scroll-padding-right: var(--snapPad);
 }
 
 .rail::-webkit-scrollbar {
@@ -158,8 +156,6 @@ body::before {
     0 18px 40px rgba(0, 0, 0, .55);
 
   scroll-snap-align: center;
-  scroll-margin-left: var(--snapPad);
-  scroll-margin-right: var(--snapPad);
 
   opacity: var(--dim);
   transform: scale(.96);
@@ -311,6 +307,7 @@ body::before {
     transition: none;
   }
 }
+
 /* ======================================================
    FLECHAS LATERALES
 ====================================================== */
@@ -373,6 +370,7 @@ body::before {
     display: none;
   }
 }
+
 /* ======================================================
    TITULO SUPERIOR
 ====================================================== */
@@ -396,7 +394,6 @@ body::before {
 
   color: var(--ink);
 
-  /* efecto pixel glow */
   text-shadow:
     0 3px 0 rgba(0, 0, 0, .6),
     0 0 20px rgba(65, 241, 255, .15);
@@ -413,11 +410,12 @@ body::before {
     var(--pixel) var(--pixel) 0 0 rgba(0, 0, 0, .6),
     0 0 25px rgba(65, 241, 255, .15);
 }
+
 /* =========================
    DOT SEGÚN ESTADO
 ========================= */
 
-.dot.progreso{
+.dot.progreso {
   background: #ff3b3b;
   /* rojo */
   box-shadow:
@@ -433,4 +431,19 @@ body::before {
     0 var(--pixel) 0 0 rgba(0, 0, 0, .65),
     var(--pixel) var(--pixel) 0 0 rgba(0, 0, 0, .65),
     0 0 12px rgba(53, 255, 107, .35);
+}
+.rail {
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  /* Hide scrollbar - Firefox */
+  scrollbar-width: none;
+
+  /* Hide scrollbar - IE / old Edge */
+  -ms-overflow-style: none;
+}
+
+/* Hide scrollbar - Chrome / Safari */
+.rail::-webkit-scrollbar {
+  display: none;
 }
