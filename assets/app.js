@@ -1,3 +1,14 @@
+const navSound = document.getElementById('navSound');
+
+function playNavSound() {
+    if (!navSound) return;
+
+    navSound.currentTime = 0; // reinicia para permitir spam
+    navSound.play().catch(() => {});
+}
+
+navSound.volume = 0.1;
+
 const rail = document.getElementById('rail');
 const cards = Array.from(rail.querySelectorAll('.card'));
 
@@ -21,9 +32,15 @@ function setActive(index) {
 window.addEventListener('DOMContentLoaded', () => setActive(0));
 
 // Botones
-document.getElementById('prev')?.addEventListener('click', () => setActive(currentIndex - 1));
-document.getElementById('next')?.addEventListener('click', () => setActive(currentIndex + 1));
+document.getElementById('prev')?.addEventListener('click', () => {
+    playNavSound();
+    setActive(currentIndex - 1);
+});
 
+document.getElementById('next')?.addEventListener('click', () => {
+    playNavSound();
+    setActive(currentIndex + 1);
+});
 // Teclado (flechas + enter)
 window.addEventListener('keydown', (e) => {
     const tag = document.activeElement?.tagName;
@@ -31,12 +48,14 @@ window.addEventListener('keydown', (e) => {
 
     if (e.key === 'ArrowLeft') {
         e.preventDefault();
+        playNavSound();
         setActive(currentIndex - 1);
         return;
     }
 
     if (e.key === 'ArrowRight') {
         e.preventDefault();
+        playNavSound();
         setActive(currentIndex + 1);
         return;
     }
