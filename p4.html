@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/retro.css" />
+    <h1 class="title"></h1>
+    <title>Práctica 4</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1 class="title">
+                <span class="badge">
+                    <span class="dot" aria-hidden="true"></span>
+                    PRÁCTICA EN CLASE · 4
+                </span>
+                <a href="index.html" class="home-btn">HOME</a>
+            </h1>
+
+            <p class="subtitle">
+               Ejemplo de un password cracker for fuerza bruta. 
+            </p>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <article class="card">
+            <div class="bar" aria-hidden="true"></div>
+            <div class="content">
+                <!-- ================= PYTHON ================= -->
+                <section>
+                    <div class="section-head">
+                        <h2>1. Código del ejercicio (Python)</h2>
+                        <span class="chip"><b>Brute Force</b> SHA-256</span>
+                    </div>
+
+                    <p>Este script genera todas las combinaciones posibles de 4 letras y compara su hash SHA-256 con uno
+                        objetivo.</p>
+
+                    <pre><code>
+import hashlib
+import string
+
+lenght = 4
+
+def product_gen(items, repeat):
+    if repeat == 0:
+        yield ()
+        return
+
+    for item in items:
+        for combo in product_gen(items, repeat - 1):
+            yield (item,) + combo
+
+alpha = list(string.ascii_lowercase)
+
+hash_guardado = '3cdea1b06e8f4c08213ca4cbd702a27871914c971ee226cf9debf88b8435c375'
+
+for candidate in list(product_gen(alpha, repeat=lenght)):
+    password = "".join(candidate)
+    hash_resultado = hashlib.sha256(password.encode()).hexdigest()
+
+    if hash_guardado == hash_resultado:
+        print(password)
+</code></pre>
+                </section>
+
+                <!-- ================= VALORACIÓN ================= -->
+                <section>
+                    <div class="section-head">
+                        <h2>2. Valoración de la práctica</h2>
+                        <span class="chip"><b>Opinión</b> utilidad y dificultad</span>
+                    </div>
+                    <p> Aunque lo que pide no es super complejo,como no teniamos practica, estuvimos un rato para hacer bien la recursion por nuestra cuenta.
+                        </p>
+                </section>
+
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
