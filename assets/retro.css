@@ -214,6 +214,21 @@ li{
 code, .mono{ font-family: inherit; color: rgba(242,242,242,.92); }
 .muted{ color: rgba(242,242,242,.68); }
 
+.result-box {
+  border: 2px dashed #6699ff;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #f0f7ff;
+  color: #1b1b1b;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: .02em;
+}
+.result-box strong { display: block; font-size: 14px; margin-bottom: 4px; color: #0a2f6f; font-weight: 700; }
+.result-box.success { border-color: #6699ff; background-color: #f0f7ff; color: #1b1b1b; }
+
 /* ---------- Bloque imagen (reutilizable) ---------- */
 .media{
   display: grid;

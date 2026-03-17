@@ -68,6 +68,43 @@ for candidate in list(product_gen(alpha, repeat=lenght)):
     if hash_guardado == hash_resultado:
         print(password)
 </code></pre>
+                    <div class="result-box">
+                        vini
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section-head">
+                        <h2>1.b Código adicional (Python)</h2>
+                        <span class="chip"><b>Brute Force</b> modificado</span>
+                    </div>
+                    <p>Ejecuta este código para buscar la cadena que produce el hash SHA-256 objetivo.</p>
+                    <pre><code>
+import itertools
+import string
+import hashlib
+
+hash_objetivo = "4a00382efb5acb17c52a699364e65fc0189a4235e4fb467eb085cfa565cfeaf4"
+
+letras = string.ascii_lowercase
+
+for pos in range(5):
+    for relleno in itertools.product(letras, repeat=4):
+        palabra = list("cr7")
+        base = list(relleno)
+        base[pos:pos] = palabra
+        texto = ''.join(base)
+        hash_actual = hashlib.sha256(texto.encode()).hexdigest()
+
+        if hash_actual == hash_objetivo:
+            print("Encontrado:", texto)
+            exit()
+
+print("No se encontró coincidencia")
+</code></pre>
+                    <div class="result-box success">
+                        cr7goat
+                    </div>
                 </section>
 
                 <!-- ================= VALORACIÓN ================= -->
@@ -76,7 +113,7 @@ for candidate in list(product_gen(alpha, repeat=lenght)):
                         <h2>2. Valoración de la práctica</h2>
                         <span class="chip"><b>Opinión</b> utilidad y dificultad</span>
                     </div>
-                    <p> Aunque lo que pide no es super complejo,como no teniamos practica, estuvimos un rato para hacer bien la recursion por nuestra cuenta.
+                    <p> Aunque lo que pide no es super complejo, como no teniamos practica, estuvimos un rato para hacer bien la recursion por nuestra cuenta.
                         </p>
                 </section>
 
