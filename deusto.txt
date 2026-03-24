@@ -1,0 +1,590 @@
+Alonso Vicario, Ainhoa
+Desde 2023, es Directora de DeustoTech en la Universidad de Deusto, habiendo liderado previamente la Unidad de Energía del Instituto y la investigación en el Deusto Sustainable Research Group. Con una amplia trayectoria en proyectos de investigación sobre energía, sostenibilidad y economía circular, ha coordinado iniciativas destacadas como H2020 Waste4Think y actualmente lidera proyectos como H2020 FoodRUs y TONOWASTE.
+
+
+
+Elejoste Larrucea, Pilar
+Posee más de diez años de experiencia en gestión de I+D, habiendo liderado múltiples proyectos y propuestas en el ámbito de los sistemas de transporte inteligentes, así como colaborado en iniciativas europeas. Actualmente, se desempeña como Subdirectora y responsable de la Unidad Técnica de Proyectos Deustotech, después de haber coordinado varias unidades relacionadas con la movilidad y el transporte durante su trayectoria profesional en DeustoTech.
+
+
+
+Biccari, Umberto
+Licenciado y doctor en Matemáticas, ha desarrollado su carrera profesional como investigador asociado y docente en la Cátedra de Matemáticas Computacionales de Fundación Deusto, impartiendo clases en distintas facultades desde 2019. Con una destacada producción científica de 15 artículos en revistas de alto impacto y participación en proyectos regionales, estatales e internacionales, su trabajo ha sido reconocido con el IKERTRAMO en 2019.
+
+
+
+Elejabarrieta, María Jesús
+La doctora María Jesús Elejabarrieta Olabarri cuenta con un sólido historial académico en Ciencias Físicas, con más de 50 artículos en revistas de alto impacto y una significativa participación en proyectos de investigación, tanto nacionales como europeos. Su trayectoria incluye la dirección de múltiples tesis doctorales, la obtención de patentes en el área de materiales magnetorreológicos y reconocimientos como sexenios de investigación, reflejando su impacto en la comunidad científica.
+
+
+
+Garay Martínez, Roberto
+Eres Investigador Principal en Deusto Sustainable Research Group, con una sólida experiencia en transferencias de calor, energía renovable y sistemas de control, enfocado en el comportamiento energético de los edificios. Tu trayectoria incluye el diseño e implementación de experimentos a escala real y un interés reciente en el modelado energético basado en datos, analizando la evolución de la tecnología y las regulaciones en el sector de la energía.
+
+
+
+Garcia Bringas, Pablo
+El Dr. Pablo García Bringas es un destacado académico y profesional en el ámbito de la ingeniería informática, con una extensa formación que incluye un Executive Máster en Business Administration y varios másteres en áreas relacionadas, así como un doctorado especializado en inteligencia artificial y ciberseguridad. Su trayectoria incluye ser profesor titular y Vicedecano en la Universidad de Deusto, fundador de la Cátedra Deusto en Industria Digital, y director de proyectos de investigación e innovación, participando activamente en más de 100 iniciativas y con más de 150 publicaciones científicas.
+
+
+
+Lenzi, Sara
+La doctora Sara Lenzi es especialista en diseño de sonido y sonificación de datos, formándose en Filosofía de la Ciencia y Música Electroacústica en Italia, y destacándose por su contribución al branding sonoro como fundadora de la primera agencia del sector en el país. A lo largo de su trayectoria, ha impartido clases y conferencias internacionales, obtenido un doctorado cum laude en Diseño, y actualmente investiga en el Deusto Design Research Group, centrada en el uso del sonido como medio de interacción.
+
+
+
+López-de-Ipiña, Diego
+El Dr. Diego López-de-Ipiña es catedrático en la Universidad de Deusto, donde obtuvo su doctorado en la Universidad de Cambridge y ha liderado el programa de doctorado de su facultad, además de impartir diversas asignaturas en el ámbito de la informática. Su trayectoria incluye la supervisión de múltiples tesis, la participación en importantes proyectos de investigación europeos y españoles, así como la publicación de más de 200 artículos científicos y el reconocimiento por su impacto social en la investigación.
+
+
+
+Mendez, Amaia
+Es licenciada en Telecomunicación y doctora en Ciencia de la Computación por la Universidad de Deusto, donde actualmente es profesora y enseña asignaturas relacionadas con las tecnologías de telecomunicación. Su investigación se centra en la Ingeniería Biomédica y en el desarrollo de tecnologías para mejorar la calidad de vida de personas con necesidades especiales, formando parte del equipo de investigación DeustoTech Biotech.
+
+
+
+Murillo, Alberto
+El Dr. Alberto Murillo es ingeniero industrial y doctor por la Universidad de Deusto, especializado en simulación de procesos de fabricación, caracterización de aleaciones metálicas y evaluación de condiciones tribológicas, con un enfoque en la sostenibilidad y eficiencia energética en procesos de conformado metálico. Su trayectoria profesional incluye múltiples proyectos de investigación financiados, 18 publicaciones académicas y su reciente incorporación a la línea de investigación en sostenibilidad de DeustoTech.
+
+
+
+Onieva, Enrique
+Es profesor y investigador en inteligencia artificial y aprendizaje automático en la Universidad de Deusto, donde lidera programas relacionados con Big Data y Business Intelligence, y dirige un programa de doctorado en ingeniería. Con más de 25 proyectos de investigación y más de 100 artículos científicos, su trabajo se centra en la aplicación de la inteligencia artificial a sistemas inteligentes de transporte y ha sido reconocido en múltiples congresos internacionales.
+
+
+
+Achiaga Menor, Beatriz
+Beatriz Achiaga es doctora en Ingeniería, especializada en materiales y fabricación avanzada, con una trayectoria centrada en la caracterización y modelización de materiales utilizados en técnicas de fabricación avanzadas, incluida la fabricación aditiva. Actualmente, es profesora en la Universidad de Deusto en el área de mecánica y diseño industrial, y forma parte del grupo Applied Mechanics, participando en múltiples proyectos de investigación.
+
+
+
+Aguilera Irazabal, Unai
+Unai Aguilera es ingeniero informático y doctor en Ciencias de la Computación por la Universidad de Deusto, además de licenciado en Ciencias Físicas por la UNED. Actualmente es profesor y responsable del laboratorio de tecnologías inmersivas en la misma universidad, donde se dedica a la investigación en tecnologías semánticas y realidad extendida, participando en varios proyectos a nivel europeo y nacional.
+
+
+
+Almeida Escondrillas, Aitor
+Aitor Almeida es profesor e investigador en la Facultad de Ingeniería de la Universidad de Deusto, donde se especializa en aprendizaje automático y aplicaciones de inteligencia artificial en salud. Obtuvo su doctorado en Ciencias de la Computación en la misma universidad, enfocando su investigación en el análisis del comportamiento de usuarios y interacciones en entornos inteligentes y redes sociales.
+
+
+
+Amador Cervera, Manuel
+Dr. Manuel Amador Cervera es graduado en Ciencias Ambientales, máster en Ingeniería Ambiental y doctor en Sostenibilidad y Análisis de Ciclo de Vida, habiendo trabajado en investigación sobre biogás y la Huella Ambiental de Producto. Actualmente es investigador en Deustotech, donde centra su trabajo en la sostenibilidad y el desperdicio alimentario, además de investigar la integración del Análisis de Ciclo de Vida con la Dinámica de Sistemas para mejorar las estrategias de Economía Circular.
+
+
+
+Angulo Martínez, Ignacio
+Es licenciado en Informática por la Universidad de Deusto, donde también obtuvo su doctorado en 2015 y ha desarrollado una amplia trayectoria profesional en el ámbito académico y empresarial, destacándose como socio fundador de una empresa dedicada a microprocesadores y ocupando el cargo de director del Departamento de Tecnologías Informáticas, Electrónicas y de la Comunicación. Con más de 25 proyectos de investigación a su haber y múltiples publicaciones científicas, ha contribuido significativamente en áreas como sistemas embebidos y transporte inteligente.
+
+
+
+Arias Álamo, Danel
+Danel se graduó en Ingeniería Informática en la Universidad de Deusto (2023) y obtuvo un título en Transformación Digital, además de un máster en Ciencia de Datos e Ingeniería de Computadores en la Universidad de Granada (2024), enfocándose en la interacción entre la inteligencia artificial y la computación cuántica. A lo largo de su trayectoria, ha trabajado como becario de investigación en la Universidad de Deusto y actualmente forma parte de Global Data Media Tech, especializándose en el desarrollo de algoritmos cuánticos, y se ha unido al equipo Deusto for Knowledge - D4K para impulsar tecnologías cuánticas.
+
+
+
+Arjona Aguilera, Laura
+Laura Arjona es Profesora Ayudante Doctora en la Facultad de Ingeniería de la Universidad de Deusto, donde ha completado su formación académica con un doctorado y un máster, además de un grado en Ingeniería de Telecomunicación. Su trayectoria profesional incluye becas postdoctorales enfocadas en neuroingeniería y el desarrollo de aplicaciones de salud digital, centrándose en tecnologías inalámbricas y sistemas embebidos.
+
+
+
+Barco Martelo, Álex
+Álex Barco Martelo se graduó en Ingeniería de Telecomunicación en 2010 y obtuvo su doctorado en 2017 en La Salle-Universitat Ramon Llull, complementando su formación con estancias en instituciones destacadas en Boston y Panamá. Entre 2017 y 2020, realizó un postdoctorado en la Universidad de Amsterdam, centrando su investigación en la robótica social y asistencial, así como en la promoción de vocaciones STEAM y el aprendizaje basado en servicio.
+
+
+
+Bereziartua González, Leire
+Leire Bereziartua Gonzalez es Ingeniera en Diseño Industrial con un máster en producto y formación para el profesorado, y actualmente trabaja en Deusto Design Research Group, donde imparte materias de diseño y expresión gráfica en ingeniería y gestiona el Deusto FabLab. Desde 2019, se ha enfocado en la investigación doctoral sobre Diseño Circular y Energías Renovables Urbanas.
+
+
+
+Bilbao Jayo, Aritz
+Dr. Aritz Bilbao Jayo se graduó en Ingeniería Informática y obtuvo su máster y doctorado en la Universidad de Deusto, donde actualmente es Profesor Ayudante Doctor en DeustoTech. Ha trabajado en diversos proyectos europeos aplicando inteligencia artificial en áreas como el análisis de discurso político, redes sociales y salud.
+
+
+
+Bolivar Tellería, Isabel
+Isabel Bolivar es Licenciada en Ingeniería Biomédica y Maestra en Ciencias de la Ingeniería por la Universidad Iberoamericana Ciudad de México, con una destacada trayectoria en investigación enfocada en el desarrollo de soluciones tecnológicas para mejorar la calidad de vida de personas con discapacidad. Su especialización abarca el diseño y adaptación de productos de apoyo, desarrollo de sistemas de rehabilitación y componentes protésicos, impulsando la inclusión y la independencia a través de la tecnología.
+
+
+
+Borges Hernández, Cruz Enrique
+El Dr. en Matemáticas por la Universidad de Cantabria es investigador en DeustoTech, donde se especializa en proyectos sobre eficiencia energética y algoritmos de predicción en el sector energético. Ha participado en más de 20 proyectos en sostenibilidad, incluyendo varios a nivel europeo, y su investigación se centra en el diseño experimental y la inteligencia artificial para apoyar decisiones en planificación urbana.
+
+
+
+Buján Carballal, David
+El Dr. David Buján Carballal es Ingeniero en Informática y cuenta con un máster en e-Business, así como un doctorado en ciencias de la computación, todos obtenidos en la Universidad de Deusto, donde actualmente enseña y realiza investigación en áreas como Blockchain y Cloud computing. Ha participado en múltiples proyectos de investigación y conferencias internacionales, además de colaborar con el grupo Mobile Communications Research Group (MORElab) y la Cátedra Telefónica Deusto.
+
+
+
+Carnicero Aguirre, Alicia
+Alicia se graduó en Ingeniería en Diseño Industrial por la Universidad de Deusto en 2023, destacándose con un Premio Extraordinario, y obtuvo un Máster en Diseño de Interfaces y Experiencia de Usuario por la UOC en 2024, donde también realizó investigación sobre diseño y transformación organizacional. Actualmente, es docente en la Universidad de Deusto y trabaja en su tesis doctoral dentro del Deusto Design Research Group, enfocándose en la cultura de diseño y su impacto en las organizaciones.
+
+
+
+Casado Mansilla, Diego
+Diego Casado-Mansilla obtuvo su doctorado en 2016 en la Universidad de Deusto, donde actualmente es profesor y investigador PostDoc en DeustoTech, centrando su investigación en la interacción humano-objeto y tecnologías de cambio de comportamiento sostenible. Ha publicado más de 100 artículos científicos y ha participado en numerosos proyectos de investigación, además de ser miembro activo de comités científicos de IEEE y ACM.
+
+
+
+Ccesa Quincho, Mercedes
+Posee un Máster en Computación y Sistemas Inteligentes de la Universidad de Deusto (2024), así como experiencia docente en la Universidad Nacional de San Cristóbal de Huamanga desde 2017, y ha trabajado en proyectos de investigación aplicando inteligencia artificial en sectores como la salud y la movilidad inteligente. Actualmente es parte del grupo Deusto Smart Mobility y cursa un doctorado en Ingeniería para la Sociedad de la Información y Desarrollo Sostenible, enfocándose en Machine Learning y optimización de procesos.
+
+
+
+Conde Fernandez, Aintzane
+Aintzane Conde-Fernandez es Ingeniera Industrial y Doctora en Ingeniería Mecánica por la Universidad del País Vasco, y actualmente ejerce como profesora en la Universidad de Deusto, donde imparte diversas asignaturas en el área de diseño, mecánica y fabricación. Su trayectoria profesional incluye investigación en electroerosión y su enfoque actual se centra en la mecánica de materiales y la simulación de procesos de fabricación, formando parte del grupo de investigación Applied Mechanics.
+
+
+
+Cortazar Noguerol, Julen
+Julen es graduado en Física por la Universidad del País Vasco y posee un máster en Inteligencia Artificial por la Universidad Internacional de Valencia. Desde noviembre de 2022, trabaja en DeustoTech en proyectos relacionados con la caracterización de elastómeros y actualmente está cursando un doctorado enfocado en materiales magnetorreológicos para la atenuación de vibraciones estructurales.
+
+
+
+Cortés Martínez,  Fernando
+Con casi 30 años de experiencia en Mecánica Aplicada, obtuve el doctorado en 2006 y he coautor de más de 45 artículos en revistas de alto impacto, logrando tres sexenios de investigación. He liderado proyectos de investigación, colaborado con empresas, y contribuido al desarrollo de patentes, enfocándome en la Mecánica Computacional y el Comportamiento Mecánico de Materiales y Estructuras.
+
+
+
+Cruz Elejalde, Haizea
+Haizea es Graduada en Ingeniería Ambiental y en Ciencias Ambientales, con un Máster en Agricultura y Ganadería Ecológicas, y ha desarrollado su trayectoria profesional en la consultoría como Técnico en Proyectos de Cambio Climático, además de colaborar en proyectos de investigación relacionados con la sostenibilidad y la mitigación del cambio climático. Actualmente, cursa un doctorado en DeustoTech enfocado en la reducción del desperdicio de alimentos en Europa, contribuyendo a fomentar sistemas alimentarios más sostenibles.
+
+
+
+Damilola Sunday, John
+John es graduado en Ingeniería de Materiales y Metalúrgica por la Universidad Federal de Tecnología, Akure, y posee un Máster en Ingeniería Mecánica, donde colaboró en investigaciones y brindó tutorías académicas. Actualmente es ayudante de investigación en DeustoTech, enfocado en el modelado matemático y análisis de procesos de flujo de metal, y se dedica a contribuir a proyectos innovadores en el campo de la ingeniería.
+
+
+
+Dario Guerrero, Juliam
+Julián Darío Guerrero Díaz es Ingeniero Electrónico de la Universidad de Nariño, especializado en análisis de datos y aplicaciones de inteligencia artificial en salud y calidad de vida, con más de dos años de experiencia en la industria financiera. Actualmente, forma parte del grupo eVIDA, donde aplica su experiencia en el manejo de grandes volúmenes de datos para proyectos enfocados en la salud humana y ambiental, especialmente en relación con los efectos del cambio climático.
+
+
+
+de Araujo Fernandes, Alcides
+Alcides es ingeniero mecánico graduado en 2015 y tiene un máster en Ingeniería en Automatización, Electrónica y Control Industrial obtenido en 2022. A lo largo de su carrera, ha desempeñado roles tanto técnicos como de gestión, desde supervisor técnico hasta Director Técnico, y actualmente trabaja como programador en sistemas SCADA y PLC, además de investigar sobre "Edge Intelligence".
+
+
+
+Díaz Aparicio, Jon
+Jon Díaz es Licenciado en Ingeniería Informática por la Universidad de Deusto y ha completado un Máster en Computación y Sistemas Inteligentes, actualmente cursando su doctorado en "Ingeniería para la Sociedad de la Información y Desarrollo Sostenible". Desde 2020, trabaja en el equipo DeustoTech Mobility, desarrollando su tesis doctoral en el proyecto europeo SOTERIA, enfocado en la aplicación de inteligencia artificial para mejorar la movilidad y seguridad de usuarios vulnerables en entornos urbanos.
+
+
+
+Díez Blanco, Luis Enrique
+El Dr. Luis Enrique Díez es Ingeniero de Telecomunicación y posee un Máster en Tecnologías y Sistemas de la Comunicación, así como un Doctorado en Ingeniería, con una tesis enfocada en sistemas de localización basados en sensores inerciales. Actualmente, es profesor ayudante doctor en la Facultad de Ingeniería y ha trabajado en diversos roles en el sector académico y de consultoría, centrando su investigación en el procesado de señales y la fusión de datos para el desarrollo de servicios de localización y espacios inteligentes.
+
+
+
+Divasson Jaureguibarria, Asier
+Asier Divasson es Ingeniero Técnico Industrial con especialización en Electrónica Industrial y un Máster en Integración de las Energías Renovables, cuya trayectoria abarca ingeniería civil, ventas e investigación en sostenibilidad e innovación tecnológica. Actualmente, está desarrollando su tesis doctoral en el Deusto Sustainable Research Group, enfocándose en estrategias de electrificación de flotas de vehículos en comunidades marginalizadas y liderando el proyecto V2G-QUESTS para fomentar la tecnología Vehicle-to-Grid.
+
+
+
+Duflo, Gabriel V.
+Gabriel se graduó en matemáticas aplicadas y obtuvo una maestría en informática teórica en 2018 en Francia, antes de completar su doctorado en informática en la Universidad de Luxemburgo en 2023, centrándose en el aprendizaje automático y la optimización. Posteriormente, ha trabajado como investigador postdoctoral en la Vrije Universiteit Brussel y se unirá a la Universidad de Deusto en 2024, donde continuará su investigación en optimización y aprendizaje automático.
+
+
+
+Eguíluz Morán, Andoni
+Es Doctor en Ingeniería Informática por la Universidad de Deusto y Licenciado en Informática, donde ha desarrollado una extensa carrera como profesor y coordinador en diversas áreas de la informática desde 1991. Su trayectoria abarca también la investigación en educación tecnológica, la dirección de proyectos innovadores y la promoción de la participación femenina en la tecnología a través de iniciativas como el Premio Ada Byron y el proyecto InspiraSTEAM.
+
+
+
+Emaldi Manrique, Mikel
+El Dr. Mikel Emaldi Manrique es Doctor en Ingeniería Informática y de Telecomunicación por la Universidad de Deusto, donde obtuvo su título de ingeniero en informática y se especializó en desarrollo e integración de soluciones software. Su trayectoria profesional incluye una destacada labor en diversos proyectos de investigación relacionados con Big Data y tecnologías semánticas, así como la coordinación del capítulo en euskera de DBPedia.
+
+
+
+Fajardo Calderín, Jenny
+Jenny Fajardo se graduó en Ingeniería Informática y obtuvo una Maestría en Informática Aplicada en la Universidad Tecnológica de La Habana, y completó su Doctorado en Tecnologías de la Información y la Comunicación en Granada, España. Con más de 10 años de experiencia en docencia e investigación, actualmente es profesora e investigadora en la Facultad de Ingeniería, enfocándose en Inteligencia Artificial y optimización de rutas de vehículos dentro del equipo de investigación Deusto Smart Mobility.
+
+
+
+Fernández Barrios, Roberto
+Roberto Fernández es ingeniero en Informática y Electrónica Industrial con un máster en Ingeniería Informática, especializado en Sistemas Inteligentes y Computación, por la Universidad de Deusto. Actualmente, trabaja en DeustoTech en investigación sobre inteligencia artificial y computación cuántica, liderando proyectos de desarrollo de soluciones de software que integran la innovación con la práctica empresarial.
+
+
+
+Fernández de Retana, Miguel
+Miguel Fernández de Retana es investigador en el Instituto de Investigación DeustoTech de la Universidad de Deusto, donde se especializa en modelización matemática aplicada a problemas de biología y salud, incluyendo la identificación de biomarcadores genéticos en terapias contra el cáncer. Actualmente está involucrado en el proyecto LATE-AYA, donde aplica datos digitales y técnicas avanzadas de procesamiento del lenguaje natural para modelizar la calidad de vida de los supervivientes jóvenes de cáncer.
+
+
+
+Fernandez-Caballero Fariñas, Lola
+Lola es Ingeniera de Telecomunicaciones y Máster en Ingeniería Biomédica por la U. Politécnica de Madrid, y ha completado un doctorado en el Consejo Superior de Investigaciones Científicas, enfocándose en tecnologías de ultrasonidos para la caracterización de materiales compuestos. Ha colaborado con instituciones de prestigio como MIT y Harvard, y actualmente se desempeña como Ikerbasque Research Fellow, investigando sistemas de monitorización no invasiva y aplicaciones en sectores como el agroalimentario y energético.
+
+
+
+Fidalgo Astorquia, Ignacio
+Ignacio Fidalgo se graduó en Ingeniería en Electrónica Industrial y Automática en 2020 y obtuvo un Máster en Automatización, Electrónica y Control Industrial en 2021 en la Universidad de Deusto, donde también participó en el desarrollo de laboratorios remotos. Desde 2021, se dedica a realizar su tesis doctoral sobre aprendizaje por refuerzo en robótica industrial y trabaja como profesor en la misma universidad, enfocándose en la investigación de robótica, sistemas distribuidos e inteligencia artificial en automatización y control.
+
+
+
+Galparsoro Maiz, Ander
+Ander obtuvo su grado en Ingeniería Electrónica Industrial en la Universidad de Mondragón en 2023, donde realizó prácticas desarrollando un software para el análisis dinámico de trenes, y luego continuó su formación con un máster en Diseño y Fabricación en Automoción en la Universidad de Deusto. En este contexto, inició un doctorado sobre control de suspensiones activas y actualmente trabaja en DeustoTech, enfocándose en mejorar el confort y el manejo de vehículos eléctricos.
+
+
+
+García Barruetabeña, Jon
+Jon García Barruetabeña es Doctor en Comportamiento Mecánico y de Materiales, con una trayectoria profesional que incluye su trabajo como Investigador en Ikerlan IK4 y su actual posición en la Universidad de Deusto, donde ha sido acreditado como Profesor Titular y ha dirigido varios proyectos e investigaciones enfocados en el sector de la automoción. Su labor académica se destaca por la publicación de numerosos artículos en revistas de alto impacto, la dirección de tesis doctorales y su papel como Coordinador del Área de Mecánica y Diseño.
+
+
+
+García Quintanilla, José Ignacio
+José Ignacio García Quintanilla es Ingeniero Industrial y Doctor en Ingeniería Industrial, dedicado a la docencia e investigación en la Universidad de Deusto desde 1998, donde enseña y coordina programas en ingeniería industrial. Su área de investigación abarca el control de máquinas eléctricas, la gestión de energía eléctrica y la electrónica de potencia, con un enfoque especial en la integración de energías renovables.
+
+
+
+García Zubía, Javier
+Javier García Zubía es licenciado y doctor en Informática por la Universidad de Deusto, donde ha sido profesor desde 1989, centrándose en temas de electrónica en grados y máster. Su trayectoria incluye una fuerte actividad investigadora en áreas como el aprendizaje mejorado por tecnología y el diseño SoC, destacándose con más de 120 publicaciones y un índice h notable.
+
+
+
+Garzón Alfonso, Wilmer
+Wilmer Garzón es un investigador postdoctoral en Ciencia de Datos e Inteligencia Artificial, con doble titulación doctoral en Ciencias de la Computación y en Ingeniería de Computadores, y más de 15 años de experiencia en proyectos de investigación aplicada y transferencia tecnológica en Europa y América Latina. Su trayectoria abarca investigación, docencia universitaria y liderazgo académico, enfocado en desarrollar soluciones tecnológicas que generen un impacto social positivo.
+
+
+
+Ghosh, Arka
+El Dr. Arka Ghosh obtuvo un doctorado en Ciencias de la Computación y Tecnología en IIEST, Shibpur, y actualmente es investigador asociado en DeustoTech, donde se especializa en movilidad inteligente y optimización del transporte. Ha publicado más de 17 artículos y ha colaborado en proyectos importantes de la UE, además de enseñar y mentorizar a estudiantes en aprendizaje automático y minería de datos.
+
+
+
+Gómez Carmona, Oihane
+La Dra. Oihane Gómez Carmona es Investigadora Asociada en DeustoTech, donde se especializa en la intersección del Internet de las Cosas y la Inteligencia Artificial, habiendo defendido su tesis doctoral en 2021. Ha participado en múltiples proyectos sobre entornos inteligentes y ha publicado numerosos trabajos en su campo de investigación.
+
+
+
+Gómez Larrakoetxea, Nerea
+La Dra. Nerea Gómez Larrakoetxea es licenciada en Ingeniería Informática y cuenta con un Máster Universitario en Automatización, Electrónica y Control Industrial, ambas titulaciones obtenidas en la Universidad de Deusto, donde también completó su doctorado con Mención Cum Laude en 2023. Actualmente, es Investigadora Asociada en DeustoTech y docente en la Facultad de Ingeniería, enfocando su trabajo en la optimización de procesos industriales mediante Edge Computing e inteligencia artificial, habiendo contribuido significativamente en proyectos y publicaciones internacionales en estos campos.
+
+
+
+González Santocildes, Asier
+Asier es graduado en un doble grado de Ingeniería Informática e Ingeniería Electrónica, además de contar con un Máster en Computación y Sistemas Inteligentes, y actualmente se dedica a la investigación y docencia en el Instituto Tecnológico de DeustoTech y en la Universidad de Deusto. Su trayectoria incluye experiencia en energías renovables y ciberseguridad, así como una fuerte pasión por la programación y las tecnologías emergentes.
+
+
+
+Goti Elordi, Aitor
+Aitor Goti Elordi es Ingeniero en Organización Industrial y doctor en Ingeniería por la Universidad Politécnica de Valencia. Actualmente, es profesor en la Universidad de Deusto en Bilbao, donde se especializa en la enseñanza de Tecnologías Industriales y temas relacionados con la Organización Industrial, además de participar activamente en investigación sobre logística y sistemas de información.
+
+
+
+Guenaga Gómez, María Luz
+La Doctora en Ingeniería Informática es profesora titular y líder en la línea estratégica Vocaciones STEAM, con una destacada trayectoria en investigación sobre tecnología educativa y educación STEM, reflejada en más de 40 publicaciones en revistas indexadas. Además, ha coordinado y participado en numerosos proyectos de I+D+i a nivel nacional e internacional, y se involucra activamente en la formación y promoción de la ciencia y tecnología entre educadores y estudiantes.
+
+
+
+Guerrero Tamayo, Ana
+Ana es Ingeniera Superior en Electrónica y Automática Industrial con un Máster en Gestión de Empresas, destacándose por su excelencia académica y cumpliendo roles de responsabilidad en sectores de Redes y Sistemas Eléctricos y consultoría. Actualmente, es doctora en Ingeniería para la Sociedad de la Información y Desarrollo Sostenible, donde se dedica a la docencia e investigación en áreas como la genómica y el análisis de datos, además de ser pianista repertorista de coros y cantantes de ópera y zarzuela.
+
+
+
+Hameed, Zabit
+Zabit Hameed se doctoró en ingeniería para la sociedad de la información y el desarrollo sostenible en la Universidad de Deusto en 2023, con una tesis centrada en el uso de deep learning para el diagnóstico del cáncer de mama. Actualmente, es profesor ayudante en la facultad de ingeniería y además trabaja como investigador y gestor de proyectos en el grupo de investigación "eVida", enfocándose en la aplicación de inteligencia artificial en el ámbito de la salud.
+
+
+
+Hernández Jayo, Unai
+Unai Hernández es Ingeniero de Telecomunicaciones y Doctor en Ingeniería Informática y Telecomunicación por la Universidad de Deusto, donde actualmente es profesor y Director del Máster Universitario en Automática, Electrónica y Control Industrial. Su investigación se centra en el e-Learning y el desarrollo de laboratorios remotos, habiendo formado parte del grupo de investigación DEUSTEK y acumulando reconocimientos por su labor investigadora y docente.
+
+
+
+Hernández López, Sergio
+Sergio Hernández es ingeniero en Industria Digital y máster en Computación y Sistemas Inteligentes por la Universidad de Deusto, donde actualmente realiza un doctorado en IA Cuántica tras completar un curso sobre computación cuántica. Su trayectoria profesional incluye roles en la Sociedad Informática del Gobierno Vasco, IDOM, y AidTec, además de una participación activa en proyectos de investigación en DeustoTech.
+
+
+
+Itoro Afolayan, Blessing
+Blessing tiene una sólida formación académica en Matemáticas Aplicadas, con un máster en Ciencias Matemáticas y un posgrado en Aprendizaje Automático, respaldados por becas de Google y Facebook. Su trayectoria profesional incluye colaboraciones internacionales en áreas como agricultura y salud, así como investigación en análisis de datos y optimización aplicada en instituciones de prestigio como la Universidad Carnegie Mellon y DeustoTech.
+
+
+
+Kesiku, Cyrille Yetuyetu
+Cyrille Kesiku es estudiante de doctorado en la Universidad de Deusto, especializado en inteligencia artificial y en el desarrollo de algoritmos para combatir enfermedades como el cáncer, después de obtener un Máster en Matemáticas con enfoque en Big Data. Anteriormente, obtuvo su grado en Ingeniería Informática en la Universidad de Kinshasa y ahora se une al grupo de investigación eVIDA, centrando su trabajo en la computación cuántica aplicada a la salud.
+
+
+
+Lago Vilariño, Ana Belén
+Es profesora titular en la Universidad de Deusto, donde enseña en los Grados en Ingeniería Informática y Ciencia de Datos e Inteligencia Artificial, y cuenta con un doctorado en Ciencia de la Computación. Su trayectoria profesional incluye una destacada labor investigadora en áreas como el aprendizaje automático y la personalización de servicios, además de dirigir múltiples proyectos de innovación en contextos variados, desde la salud hasta las Smart Cities.
+
+
+
+Landaluce Simon, Hugo
+Hugo Landaluce es profesor de automatización industrial e investigador en la Universidad de Deusto, con un sólido trasfondo académico que incluye un doctorado en Informática y Telecomunicaciones y un máster en sistemas electrónicos avanzados. Su experiencia profesional abarca cuatro años como programador de procesos industriales y la coordinación de proyectos de investigación europeos, y ha dirigido varias tesis doctorales mientras se centra en el diseño de protocolos de comunicaciones.
+
+
+
+Legarda Macon, Jon
+El Dr. Jon Legarda es Doctor Ingeniero por la Universidad de Navarra y ha trabajado en diversas áreas de investigación, incluyendo telecomunicaciones y bioingeniería, principalmente en CEIT hasta 2011. Desde 2012, ha ocupado posiciones académicas en la Universidad de Deusto, donde actualmente es profesor e investigador especializado en tecnologías de comunicación y su aplicación para mejorar impactes ambientales y sociales.
+
+
+
+Leslabay Martínez, Marcelo
+Marcelo Leslabay es Doctor en Diseño y Comunicación por la Universidad Politécnica de Valencia y Licenciado en Diseño Industrial por la Universidad Nacional de La Plata, donde ha desarrollado una carrera académica como profesor e investigador en la Universidad de Deusto. Además de dirigir su propio estudio de diseño, ha organizado numerosas exposiciones internacionales y ha ocupado roles editoriales en revistas especializadas, contribuyendo significativamente al campo del diseño a nivel nacional e internacional.
+
+
+
+López García, Alejandro
+Alejandro es ingeniero en Electromecánica y Organización Industrial, con un doctorado en Ingeniería Mecánica y Aeroespacial, y su investigación se enfoca en el modelado de la erosión mediante CFD. Ha trabajado como investigador postdoctoral en la Universidad de Leeds, donde ha colaborado en proyectos innovadores y ha recibido reconocimientos como una beca de investigación en Japón y subvenciones del Gobierno Vasco.
+
+
+
+López Garde, Juan Manuel
+Juan Manuel López Garde es Ingeniero de Telecomunicación por la Universidad del País Vasco y obtuvo su doctorado en 2022 en la Universidad de Deusto, donde actualmente es profesor e investigador del grupo DEUSTO SUSTAINABLE RESEARCH GROUP. Ha acumulado más de diez años de experiencia en la industria y ha trabajado en numerosos proyectos de investigación, centrándose en áreas como wireless energy harvesting, antenas textiles y eficiencia energética en edificación.
+
+
+
+Lopez de Juan, Ruben
+Es matemático por la Universidad del País Vasco y Científico de Datos por la Universidad Autónoma de Madrid. Actualmente investiga en el proyecto Europeo SOCIAREM, enfocándose en el desarrollo de métodos justos y éticos para la repartición de beneficios en comunidades energéticas, utilizando Espacios de Datos para proteger el control de la información de los participantes.
+
+
+
+Lozano Villar, Alberto
+Alberto es graduado en Ingeniería Informática y posee un máster en Sistemas Inteligentes y Computación por la Universidad de Deusto, donde también es miembro del Deusto Sustainable Research Group. Su trayectoria profesional se destaca por la aplicación de la inteligencia artificial en proyectos europeos que abordan la sostenibilidad, como la reducción del desperdicio alimentario y la optimización de recursos en invernaderos hidropónicos.
+
+
+
+Macarulla Arenaza, Ana M.
+Ana Mª Macarulla Arenaza es ingeniera industrial y doctora en la misma disciplina por la Universidad de Navarra, y actualmente se desempeña como profesora titular en la Facultad de Ingeniería de la Universidad de Deusto. Su labor académica se centra en la enseñanza de asignaturas relacionadas con el control y la optimización de sistemas eléctricos, así como en la investigación sobre la integración de energías renovables y la gestión de microrredes.
+
+
+
+Maleki, Homayoun
+Homayoun Maleki posee formación en Ciencias de la Computación y se especializa en computación descentralizada, centrándose en criptografía y protocolos distribuidos para crear sistemas blockchain escalables. Antes de unirse a Deusto, trabajó en la automatización de redes blockchain y actualmente investiga sobre eficiencia energética y flujos de datos seguros en el contexto de infraestructuras descentralizadas.
+
+
+
+Mauraza Ingelmo, Maria
+María es graduada en Ingeniería en Tecnologías Industriales por la Universidad de Deusto y actualmente está cursando un Máster en Ingeniería Industrial en la misma institución. Forma parte del grupo de investigación DeustoTech, donde trabaja en el análisis mecánico de sistemas estructurales y materiales, específicamente en el proyecto de Atenuación de Vibraciones Sin Contacto mediante Corrientes de Foucault.
+
+
+
+Mellado Ibáñez, Álvaro
+Álvaro es graduado en Bioquímica por la Universidad de Navarra y cuenta con un Máster en Biología Computacional de la Universidad Politécnica de Madrid, con una sólida experiencia en investigación en diversas áreas como la oncología y neurorehabilitación. Actualmente, desarrolla su tesis doctoral en inteligencia artificial en el Instituto Tecnológico de DeustoTech, enfocándose en un algoritmo innovador de aprendizaje por refuerzo multi-agente.
+
+
+
+Miñón Alonso, David
+David es graduado en Física por la UPV/EHU y tiene un máster en Modelización Matemática por la Universidad de Oviedo, con experiencia en investigación en el Instituto Jožef Stefan y proyectos en la Universidad de Deusto. Actualmente, está realizando su tesis doctoral en el grupo de Applied Mechanics, donde se enfoca en la hibridación de plásticos con acero en el sector de la automoción, utilizando simulaciones y caracterización de materiales para entender su comportamiento mecánico.
+
+
+
+Morais Miñambre, Aitor
+Aitor Morais es ingeniero informático por la Universidad de Deusto y cuenta con un máster en computación cuántica por la Universidad Nebrija, donde desarrolló su interés en este campo y las redes tensoriales. Actualmente, cursa un doctorado en la Universidad de Deusto, investigando técnicas cuánticas para la optimización combinatoria y trabajando en el equipo Deusto for Knowledge - D4K para impulsar tecnologías de computación cuántica.
+
+
+
+Morales Ponce, Roberto Alejandro
+Roberto es Licenciado en Matemática por la Universidad de Santiago de Chile y obtuvo su Doctorado en Ciencias de la Ingeniería en la Universidad de Chile, complementando su formación con una estancia de investigación en Francia. Su trayectoria profesional incluye un postdoctorado en la Universidad Técnica Federico Santa María y una posición como Investigador Postdoctoral en la Universidad de Sevilla, donde actualmente trabaja en el desarrollo de modelos matemáticos para el aprendizaje federado.
+
+
+
+Muñoz, Jon
+Jon es graduado en Ingeniería Mecatrónica por Mondragon Unibertsitatea y posee dos másteres por la Universidad de Deusto, en Ingeniería Industrial e Ingeniería en Organización Industrial. Actualmente es investigador en DeustoTech, donde trabaja en su tesis doctoral enfocada en la inteligencia artificial aplicada a la industria y al desarrollo de soluciones sostenibles.
+
+
+
+Olano Oteiza, Begoña U.
+Begoña es graduada en Ingeniería en Tecnologías Industriales y posee dos másteres en Ingeniería Industrial y Organización Industrial, con una trayectoria profesional inicial en consultoría enfocada en la mejora de procesos y asesoramiento para fondos europeos. Actualmente, realiza su tesis doctoral en el Deusto Sustainable Research Group sobre aprovechamiento energético de residuos y también se dedica a la docencia en su alma mater, impartiendo clases en el Máster de Organización Industrial.
+
+
+
+Oleaga Cano, Ane
+Ane es licenciada en Ingeniería Mecánica por la UPV/EHU y tiene un máster en Diseño Industrial y Desarrollo de Producto por la Universidad de La Rioja. Ha trabajado en diseño, ecodiseño e innovación, y actualmente se une a Deusto Sustainable Research Group para desarrollar modelos de predicción del comportamiento energético en edificios y sistemas energéticos.
+
+
+
+Osa Sánchez, Ainhoa
+Ainhoa es graduada en Ingeniería Electrónica Industrial y Automática por la Universidad de Deusto y tiene un Máster en Industria 4.0 por la Universidad Internacional de La Rioja. Desde 2020, ha trabajado en el desarrollo de IoT para la salud y actualmente realiza su Doctorado mientras es ayudante de investigación en DeustoTech.
+
+
+
+Osorio Marulanda, Pablo Alberto
+Pablo es Ingeniero Matemático y M.Sc. en Matemáticas Aplicadas por la Universidad EAFIT, donde ha participado en proyectos de epidemiología y ciencias biomédicas, aplicando modelos predictivos para el análisis de enfermedades y salud ambiental. Su trayectoria incluye colaboraciones con instituciones como la Fuerza Aérea Colombiana y el desarrollo de una herramienta para la planificación de cirugías de epilepsia, demostrando un compromiso con la investigación y la responsabilidad social.
+
+
+
+Oyarbide Zubillaga, Aitor
+Aitor Oyarbide-Zubillaga es Ingeniero en Organización Industrial por la Universidad de Mondragón y Doctor por Cranfield University, actualmente es profesor en la Universidad de Deusto, especializado en Organización Industrial y Automoción. Su trayectoria incluye experiencia como Director de Operaciones y Director de Sistemas de Gestión en una empresa industrial, además de participar en investigaciones sobre sostenibilidad y eficiencia energética.
+
+
+
+Pacheco Sánchez-Aguilar, Pedro Joaquín
+Pedro Pacheco se une al grupo de investigación Applied Mechanics, donde trabajará en los proyectos DECEOLIC y REVIR, enfocándose en el modelado termomecánico y la caracterización experimental de materiales avanzados. Su trayectoria incluye el desarrollo de modelos numéricos y análisis que buscan optimizar procesos industriales, mejorando la eficiencia y sostenibilidad de los materiales.
+
+
+
+Pastor López, Iker
+El Dr. Iker Pastor López es experto en Ingeniería Informática y Telecomunicación, con un Doctorado Mencionado Cum Laude, y ha complementado su formación con un máster en Seguridad de la Información y un programa en Big Data y Business Intelligence. Actualmente, trabaja en DeustoTech en el área de Industry, enfocado en Big Data Analytics, Opinion Mining y Computer Vision, además de participar activamente en la investigación y desarrollo de proyectos y en la revisión de artículos científicos.
+
+
+
+Pedrolli, Lorenzo
+Lorenzo Pedrolli es profesor e investigador en la Universidad de Deusto, España, donde se especializa en ingeniería y ha centrado su investigación en la caracterización de materiales avanzados, manufactura aditiva y dinámica de fluidos computacional. Completó su doctorado en la misma universidad, tras obtener un grado en Ingeniería Industrial y un máster en Ingeniería Mecatrónica en la Universidad de Trento, acumulando experiencia docente y profesional en diversos proyectos de investigación y diseño mecánico en Europa.
+
+
+
+Peñas Gallo, Markel
+Markel es Licenciado en Ingeniería en Diseño Industrial por la Universidad de Deusto, donde también participó como becario en el Deusto Design Research Group, y ha trabajado en diseño y desarrollo de producto en B.lux. Actualmente, combina su labor como ayudante de investigación en su alma mater, formando parte del proyecto europeo Co-Bien, con estudios de un máster en Gestión de Proyectos por la VIU.
+
+
+
+Perales, María
+María Perales es graduada en Ciencia de Datos e Inteligencia Artificial por la Universidad de Deusto y actualmente está cursando un Máster en Computación y Sistemas Inteligentes. Trabaja en el grupo de investigación Deusto Sustainable Research Group, participando en el proyecto RenoVisor, que desarrolla herramientas digitales para promover la renovación sostenible de edificios en Europa.
+
+
+
+Perallos Ruiz, Asier
+Catedrático en la Universidad de Deusto, es Doctor e Ingeniero en Informática con más de 25 años de experiencia docente centrada en el diseño de software y bases de datos. Además de su labor académica, ha ocupado diversas posiciones de gestión y liderado proyectos de investigación en movilidad eficiente y tecnologías aplicadas, siendo parte del equipo de alto rendimiento "Deusto Smart Mobility".
+
+
+
+Pikatza Huerga, Amaia
+Amaia es graduada en Ingeniería Informática y posee un Máster en Computación y Sistemas Inteligentes de la Universidad de Deusto, donde actualmente cursa un Doctorado. Su trayectoria profesional incluye investigación en inteligencia artificial aplicada a la salud y el desarrollo de soluciones en tecnología Blockchain para la trazabilidad alimentaria, además de dedicarse a la docencia.
+
+
+
+Quesada Granja, Carlos
+Carlos Quesada es ingeniero de Telecomunicaciones y doctor en Ingeniería Mecánica, con amplia experiencia en proyectos de ciencia de datos e inteligencia artificial en instituciones de España y Francia. Desde 2020, trabaja como investigador en DeustoTech y se ha desempeñado como profesor en la Universidad de Deusto desde 2023.
+
+
+
+Rodríguez Esparza, Erick
+Erick Rodríguez-Esparza es ingeniero biomédico y doctor en Ciencias de la Ingeniería Electrónica y Computación, con un enfoque en optimización y sostenibilidad en logística de última milla. Actualmente es investigador asociado en el grupo Deusto Smart Mobility de la Universidad de Deusto, donde trabaja en el proyecto europeo SYNCHROMODE, aplicando sus conocimientos en procesamiento de imágenes y algoritmos de optimización para mejorar redes de transporte.
+
+
+
+Rodríguez-Marín Peral, Carlota
+Carlota es graduada en Ingeniería Mecánica e Ingeniería en Diseño Industrial por la Universidad de Deusto, donde también completó un Máster en Diseño y Fabricación en Automoción y actualmente cursa su doctorado en Mecánica, centrado en la mecánica de fluidos aplicada a la impresión 3D de metales. A lo largo de su trayectoria, ha acumulado experiencia en el FabLab de su universidad, Nuuk Mobility Solutions, y CIE Automotive, desarrollando habilidades en autogestión, trabajo en equipo y resolución de problemas complejos.
+
+
+
+Sainz Bedoya, Nekane
+Nekane Sainz es doctora en Telecomunicación por la Universidad de Navarra y ha trabajado como profesora-investigadora en la Universidad de Deusto desde 2005, donde imparte clases de Estadística, Física y Laboratorio de Tecnologías Emergentes. Su trayectoria profesional incluye investigaciones en comunicaciones, específicamente en redes y sistemas, y en su trabajo más reciente se enfoca en la aplicación de la tecnología Blockchain en la cadena de suministro y el sector energético.
+
+
+
+Sánchez Corcuera, Rubén
+El Dr. Rubén Sánchez Corcuera es un profesional formado en la Universidad de Deusto, donde obtuvo su grado, máster y doctorado en Ingeniería Informática, culminando con una tesis enfocada en la detección de usuarios maliciosos en el contexto de la inteligencia artificial. Desde 2018, se ha desempeñado como docente e investigador en la misma universidad, participando en proyectos estatales y europeos, contribuyendo a múltiples iniciativas científicas en el área de la tecnología.
+
+
+
+Sanz Urquijo, Borja
+El Dr. Borja Sanz Urquijo es Profesor Titular en la Facultad de Ingeniería de la Universidad de Deusto y ha sido Investigador en DeustoTech-Computing desde 2008, obteniendo su doctorado cum laude en 2012 en Sistemas de Información. Con una trayectoria que incluye liderazgo en más de 50 proyectos de investigación, ha publicado más de 60 artículos en revistas de alto impacto y se enfoca en el impacto social de la inteligencia artificial, abarcando temas como equidad, ética y responsabilidad.
+
+
+
+Sarwar, Samra
+Samra Sarwar es ingeniera de tráfico y planificadora de transporte urbano, con un máster en ingeniería de transporte de la Universidad de Tecnología y Economía de Budapest y más de 5 años de experiencia en movilidad urbana, trabajando en proyectos europeos desde 2022. Actualmente, forma parte de Deusto Smart Mobility, donde colabora en varios proyectos para modelar y optimizar el transporte, así como para explorar nuevas líneas de investigación que integren transporte e Inteligencia Artificial.
+
+
+
+Silvarrey Barruffa, Alejo
+Alejo es Ingeniero Industrial y cuenta con un Magíster en Ingeniería Ambiental y un Doctorado en Desarrollo Sostenible, además de haber sido Profesor Investigador en la Universidad Católica del Uruguay durante nueve años. Actualmente es Jefe de Operaciones del Centro Tecnológico ICT4V y colabora como Investigador Asociado en el Deusto Sustainable Research Group, enfocándose en el uso de sensado remoto para el monitoreo ambiental y en la gestión de proyectos de sostenibilidad.
+
+
+
+Soto Urruela, Asier
+Asier es físico por la Universidad del País Vasco y posee un Máster en Ingeniería de Materiales Avanzados, actualmente trabaja en DeustoTech en la investigación sobre eficiencia energética en edificación. Su trayectoria incluye participación en grupos de investigación en centros tecnológicos y académicos, donde ha desarrollado modelos multifísicos y simulaciones de sistemas complejos, combinando fundamentos de física e ingeniería.
+
+
+
+Tallón Fuentes, Paula
+Paula es graduada en Biología y tiene un Máster en Bioinformática para las Ciencias de la Salud, ambos por la Universidad de La Coruña, donde se ha especializado en herramientas computacionales y análisis de datos biológicos. Ha completado prácticas en Software 4 Science Developments S.L, donde se enfocó en el procesamiento de datos biofísicos y la interacción proteína/ligando, y actualmente se une a la unidad de eVIDA para continuar aplicando sus conocimientos en bioinformática.
+
+
+
+Tellaeche Iglesias, Alberto
+El Dr. Alberto Tellaeche Iglesias es Ingeniero en Automática y Electrónica Industrial por la Universidad de Deusto y Doctor en Ingeniería de Sistemas y Automática por la UNED, con más de 17 años de experiencia en investigación y desarrollo en el ámbito industrial. Desde 2010, combina su labor investigadora en la Fundación Tekniker, especializada en Sistemas Autónomos e Inteligentes, con su carrera académica como profesor en la Universidad de Deusto, donde ha publicado numerosos artículos y ha participado en diversos proyectos de investigación a nivel europeo y nacional.
+
+
+
+Terres Escudero, Erik B.
+Erik se graduó en Ingeniería Informática en 2022 y completó un Máster en Computación y Sistemas Inteligentes en 2023, iniciando su doctorado en Inteligencia Artificial con enfoque en la NeuroIA. Ha colaborado en el proyecto BerezIA, publicando investigaciones sobre la combinación de algoritmos y dinámicas hebbianas para mejorar la robustez de redes de IA, y actualmente desarrolla mecanismos biológicos para la consolidación de información visual.
+
+
+
+Ullah, Ubaid
+Ubaid Ullah obtuvo su licenciatura y maestría en Electrónica en la Universidad de Peshawar y un M.Phil. en la Universidad Quaid-i-Azam, antes de convertirse en Asistente de Investigación en la Universidad de Deusto bajo una beca COFUND Marie Skłodowska-Curie. Ha publicado varios artículos en revistas académicas de renombre y sus investigaciones actuales se enfocan en las aplicaciones del aprendizaje automático cuántico en el sector de la salud.
+
+
+
+Vázquez Gómez, Iñaki
+El Dr. Iñaki Vázquez es doctor en Ciencias de la Computación e Inteligencia Artificial, con experiencia en Reinforcement Learning e Internet de las Cosas, y ha ocupado importantes cargos como Director del Instituto Tecnológico Deusto-DeustoTech. Además, ha fundado varias start-ups en tecnología IoT y ha dirigido proyectos de desarrollo tecnológico, contribuyendo notablemente a la investigación y publicación en su campo.
+
+
+
+Vergara Borge, Felipe
+Felipe es ingeniero en informática graduado de la Universidad Austral de Chile, donde obtuvo su máster en 2022 y participó en un intercambio académico en Canadá; ha acumulado experiencia en desarrollo, soporte informático y docencia, y ha liderado proyectos de I+D en áreas como telemedicina y gestión de recursos. Actualmente, se incorpora como investigador pre-doctoral en DEUSTEK/MORElab, donde trabajará en el proyecto Horizon Europe GREENGAGE, enfocándose en la adaptación de entornos colaborativos para la Ciencia Ciudadana.
+
+
+
+Zamorano Aliaga, Sebastián
+Sebastián Zamorano es un académico de la Facultad de Ingeniería de la Universidad de Deusto, con un Doctorado en Ciencias de la Ingeniería por la Universidad de Chile e Ingeniero Matemático por la Universidad de Santiago de Chile, donde fue Profesor Asociado. Su trayectoria profesional incluye una beca de investigación en Alemania y una activa contribución en el campo de la teoría de control y ecuaciones diferenciales, con más de 15 publicaciones científicas y la dirección de múltiples tesis.
+
+
+
+Zulaika Zurimendi, Unai
+El Dr. Unai Zulaika Zurimendi es Investigador Asociado en DeustoTech y se graduó en Ingeniería Informática en la Universidad de Deusto, donde también obtuvo su máster y defendió su tesis doctoral en 2022, enfocada en inteligencia artificial y modelos basados en grafos. Actualmente, investiga aplicaciones de inteligencia artificial en el sector salud y participa en la docencia, impartiendo asignaturas relacionadas con sistemas inteligentes y desarrollo de software, además de dirigir trabajos finales de grado.
+
+
+
+Arretxe Zamakona, Miren
+Miren Arretxe es responsable administrativa y de investigación del proyecto CoDeFeL, financiado por el European Research Council, y cuenta con un máster en Gestión de Investigación en Agua y un doctorado en Ecotoxicología. Su trayectoria profesional se centra en el ámbito ambiental, donde ha desarrollado metodologías para el cumplimiento de regulaciones, herramientas de simplificación y enfoques innovadores, gestionando proyectos para entidades públicas y privadas a distintos niveles.
+
+
+
+Dziabenko, Olga
+Es ingeniera-física graduada en el MIPT de Moscú, Rusia, y ha trabajado en investigación sobre fotólisis y desarrollo de contenidos educativos con tecnología desde 1998. Su trayectoria incluye roles destacados en el Instituto de Estudios de Educación de Ontario y en la Universidad de Deusto, además de su participación en más de 20 proyectos de I+D y la publicación de más de 130 artículos en su campo.
+
+
+
+Egaña Aretxabaleta, Aimar
+Obtuvo su título de Ingeniero Técnico Electrónico en la Universidad del País Vasco en 2001 y ha trabajado en diversas instituciones y empresas, incluyendo el CSIC y CEMVISA VICINAY, donde lideró departamentos de I+D+i y desarrolló proyectos innovadores en electrónica. Desde 2017, se desempeña como técnico especializado en electrónica y gestor de proyectos en DEUSTOTECH, tras haber fundado su propia empresa de I+D en 2010.
+
+
+
+Madariaga Gómez, Aritz
+Aritz Madariaga es graduado en Ingeniería Informática por la Universidad de Deusto y ha desarrollado su carrera como programador, empresario y técnico especializado en investigación en Deustotech, contribuyendo a proyectos en bioingeniería y aprendizaje automático. Además, es manager del Google Developers Group Bilbao y ha organizado eventos tecnológicos y de diseño digital desde 2010.
+
+
+
+Moreno Emborujo, Asier
+Titulado en Ingeniería Informática y con un Máster y Doctorado por la Universidad de Deusto, ha desarrollado una carrera profesional desde 2010 en investigación y desarrollo en movilidad y logística, participando en diversos proyectos nacionales e internacionales. Con más de diez años de experiencia, se especializa en el diseño e implementación de soluciones software para la optimización del transporte y ha contribuido en la docencia y publicaciones en el campo de los sistemas inteligentes de transporte.
+
+
+
+Otaduy del Paso, Deitze
+La Dra. Deitze Otaduy es doctora en Ciencia y Tecnología y licenciada en Ciencias Físicas, con una sólida trayectoria en proyectos de investigación en el sector agroalimentario, economía circular y energía, destacando su labor como directora de Proyectos Europeos en DeustoTech. Además de coordinar proyectos de impacto como FOODRUS y PRECIOUS, está comprometida con la promoción de la igualdad de género en las carreras STEM a través del proyecto Inspira STEAM.
+
+
+
+Roldán-Plumey, Magaly
+Magaly tiene un BA en Artes y Ciencias de la Universidad de Puerto Rico y un JD de la Universidad Interamericana, con una trayectoria profesional que abarca asesoría legal en Puerto Rico y gestión de proyectos científicos en Europa. Ha trabajado en instituciones académicas y de investigación en España y Alemania, especializándose en comunicación, programas de intercambio y proyectos de biotecnología y salud digital, y actualmente se une a la Cátedra de Matemáticas para brindar apoyo administrativo.
+
+
+
+Salaberria Larrauri, Itziar
+Titula en Ingeniería Informática en 2006 y doctora en Sistemas de Información por la Universidad de Deusto en 2013, ha trabajado en el grupo de investigación DeustoTech desde su etapa universitaria, enfocándose en proyectos de I+D+i relacionados con comunicaciones inalámbricas en el ámbito ferroviario. Actualmente es Técnica de Investigación en DeustoTech, desarrollando proyectos innovadores para empresas y aplicando una amplia variedad de tecnologías para el desarrollo de aplicaciones web, de escritorio y móviles.
+
+
+
+Serrano Olabarri, Leire
+Leire es ingeniera en Organización Industrial por la Universidad de Deusto y trabaja como EU Project Manager en DeustoTech, enfocándose en movilidad, transporte y sistemas inteligentes de transporte, además de logística internacional. Con más de quince años de experiencia, ha coordinado y gestionado múltiples proyectos de investigación y desarrollo europeos, participando activamente en iniciativas relevantes del Programa Marco de la UE desde 2008, comenzando su carrera en Indra Sistemas.
+
+
+
+Torre Fernandez, Imanol
+Imanol es graduado y doctor en Química Analítica por la UPV/EHU, y ha complementado su formación con un máster en Gestión del Paisaje. Su trayectoria profesional incluye cinco años como investigador en el mismo departamento, participando en misiones espaciales como Mars 2020 y ExoMars, y desde 2022 se ha enfocado en la gestión y coordinación de proyectos de I+D a nivel nacional.
+
+
+
+Zarate González, Oihane
+Oihane Zarate es ingeniera de telecomunicación con un máster en el mismo campo, ambos obtenidos en la Universidad de Deusto, y ha sido docente en esta institución. Actualmente, trabaja en Deusto LearningLab, enfocándose en el desarrollo de proyectos que fomentan las vocaciones STEAM y el pensamiento computacional en educación preuniversitaria.
+
+
+

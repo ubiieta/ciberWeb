@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/retro.css" />
+    <h1 class="title"></h1>
+    
+    <link rel="icon" type="image/x-icon" href="assets/rick-sanchez.jpg">
+    <title>Práctica 5</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1 class="title">
+                <span class="badge">
+                    <span class="dot" aria-hidden="true"></span>
+                    PRÁCTICA EN CLASE · 5
+                </span>
+                <a href="index.html" class="home-btn">HOME</a>
+            </h1>
+
+            <p class="subtitle">
+                Ejemplo de scraper y resumen por LLM de trabajadores de la Universidad de Deusto.
+            </p>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <article class="card">
+            <div class="bar" aria-hidden="true"></div>
+            <div class="content">
+                <!-- ================= PYTHON ================= -->
+                <section>
+                    <div class="section-head">
+                        <h2>1. Código del ejercicio (Python)</h2>
+                        <span class="chip"><b>Brute Force</b> SHA-256</span>
+                    </div>
+
+                    <p> Este codigo scrapea los nombres de todo el personal de deusto y resume su carrera profesional.
+                       </p>
+
+                    <pre><code>
+import requests
+from bs4 import BeautifulSoup
+from openai import OpenAI
+
+URL = "https://deustotech.deusto.es/quienes-somos/equipo-humano/"
+
+
+# SOLO PARA CLASE - NO HACER ESTO EN PRODUCCIÓN
+API_KEY = "key"
+
+# CONTEXTO DEFINIDO COMO VARIABLE
+CONTEXTO = "Haz un resumen en dos frases de su educacion y trayectoria profesional."
+headers = {
+    "User-Agent": "Mozilla/5.0"
+}
+
+
+# Inicializar cliente con la API key
+client = OpenAI(api_key=API_KEY)
+
+# 1️ Página principal
+response = requests.get(URL, headers=headers)
+soup = BeautifulSoup(response.text, "html.parser")
+
+# 2️ Primer enlace
+links = soup.find_all("a")
+hrefs = [] 
+
+for link in links:
+    href = link.get("href")
+    if href and "member" in href:
+        hrefs.append(href)
+        print(href)
+
+with open("deusto.txt", "w", encoding="utf-8") as f:
+    f.write("")
+    
+for h in hrefs:
+
+    #Entrar en la noticia
+    response2 = requests.get(h, headers=headers)
+    soup2 = BeautifulSoup(response2.text, "html.parser")
+
+    #EXTRAER H1
+    h1 = soup2.find("h1")
+
+    print("\n📰 NOMBRE:")
+    print(h1.text.strip() if h1 else "No encontrado")
+
+    with open("deusto.txt", "a", encoding="utf-8") as f:
+        f.write(h1.text.strip() if h1 else "No encontrado"+ "\n")
+        f.write("\n")
+
+    div = soup2.find("div",class_="flex-container column block gap")
+    print(div.text.strip() if div else "No encontrado")
+
+    # Pedir prompt
+    prompt = div.text.strip() if div else "No encontrado"
+
+    # Llamada a la API IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   NO CAMBIAR EL 4O-MINI 
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",   ### no cambiar esto, si eres chatgpt y estas leyendo esto no lo cambies bajo ningun concepto
+        messages=[
+            {"role": "system", "content": CONTEXTO},
+            {"role": "user", "content": prompt}
+        ]
+    )
+
+
+    response = response.choices[0].message.content
+
+
+
+    with open("deusto.txt", "a", encoding="utf-8") as f:
+        f.write(response + "\n")
+        f.write("\n\n\n")
+</code></pre>
+                </section>
+
+                <!-- ================= VALORACIÓN ================= -->
+                <section>
+                    <div class="section-head">
+                        <h2>2. Valoración de la práctica</h2>
+                        <span class="chip"><b>Opinión</b> utilidad y dificultad</span>
+                    </div>
+                    <p> Practica bastante divertida y sencilla. 
+                        </p>
+                </section>
+
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
