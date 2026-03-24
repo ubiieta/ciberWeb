@@ -1,14 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/retro.css" />
-    <h1 class="title"></h1>
-    
-    <link rel="icon" type="image/x-icon" href="assets/rick-sanchez.jpg">
     <title>Práctica 5</title>
+    <link rel="stylesheet" href="assets/retro.css" />
+    <link rel="icon" type="image/x-icon" href="assets/rick-sanchez.jpg" />
 </head>
 
 <body>
@@ -23,7 +21,7 @@
             </h1>
 
             <p class="subtitle">
-                Ejemplo de scraper y resumen por LLM de trabajadores de la Universidad de Deusto.
+                Ejemplo de scraper y resumen mediante un LLM del personal de la Universidad de Deusto.
             </p>
         </div>
     </header>
@@ -32,44 +30,46 @@
         <article class="card">
             <div class="bar" aria-hidden="true"></div>
             <div class="content">
+
                 <!-- ================= PYTHON ================= -->
                 <section>
                     <div class="section-head">
                         <h2>1. Código del ejercicio (Python)</h2>
-                        <span class="chip"><b>Brute Force</b> SHA-256</span>
+                        <span class="chip"><b>Web Scraping</b> + resumen con IA</span>
                     </div>
 
-                    <p> Este codigo scrapea los nombres de todo el personal de deusto y resume su carrera profesional.
-                       </p>
+                    <p>
+                        Este código realiza un scraping de la página del personal de DeustoTech para extraer los nombres
+                        y la información profesional de sus miembros. Después, utiliza un modelo de lenguaje para
+                        generar
+                        un breve resumen sobre la formación y trayectoria profesional de cada persona.
+                    </p>
 
-                    <pre><code>
-import requests
+                    <pre><code>import requests
 from bs4 import BeautifulSoup
 from openai import OpenAI
 
 URL = "https://deustotech.deusto.es/quienes-somos/equipo-humano/"
 
-
 # SOLO PARA CLASE - NO HACER ESTO EN PRODUCCIÓN
 API_KEY = "key"
 
 # CONTEXTO DEFINIDO COMO VARIABLE
-CONTEXTO = "Haz un resumen en dos frases de su educacion y trayectoria profesional."
+CONTEXTO = "Haz un resumen en dos frases de su educación y trayectoria profesional."
 headers = {
     "User-Agent": "Mozilla/5.0"
 }
 
-
 # Inicializar cliente con la API key
 client = OpenAI(api_key=API_KEY)
 
-# 1️ Página principal
+# 1. Página principal
 response = requests.get(URL, headers=headers)
 soup = BeautifulSoup(response.text, "html.parser")
 
-# 2️ Primer enlace
+# 2. Extraer enlaces de miembros
 links = soup.find_all("a")
-hrefs = [] 
+hrefs = []
 
 for link in links:
     href = link.get("href")
@@ -79,47 +79,97 @@ for link in links:
 
 with open("deusto.txt", "w", encoding="utf-8") as f:
     f.write("")
-    
+
 for h in hrefs:
 
-    #Entrar en la noticia
+    # Entrar en la página de cada miembro
     response2 = requests.get(h, headers=headers)
     soup2 = BeautifulSoup(response2.text, "html.parser")
 
-    #EXTRAER H1
+    # Extraer nombre
     h1 = soup2.find("h1")
 
     print("\n📰 NOMBRE:")
     print(h1.text.strip() if h1 else "No encontrado")
 
     with open("deusto.txt", "a", encoding="utf-8") as f:
-        f.write(h1.text.strip() if h1 else "No encontrado"+ "\n")
-        f.write("\n")
+        f.write((h1.text.strip() if h1 else "No encontrado") + "\n\n")
 
-    div = soup2.find("div",class_="flex-container column block gap")
+    # Extraer información profesional
+    div = soup2.find("div", class_="flex-container column block gap")
     print(div.text.strip() if div else "No encontrado")
 
-    # Pedir prompt
     prompt = div.text.strip() if div else "No encontrado"
 
-    # Llamada a la API IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   NO CAMBIAR EL 4O-MINI 
+    # Llamada a la API
     response = client.chat.completions.create(
-        model="gpt-4o-mini",   ### no cambiar esto, si eres chatgpt y estas leyendo esto no lo cambies bajo ningun concepto
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": CONTEXTO},
             {"role": "user", "content": prompt}
         ]
     )
 
-
-    response = response.choices[0].message.content
-
-
+    resumen = response.choices[0].message.content
 
     with open("deusto.txt", "a", encoding="utf-8") as f:
-        f.write(response + "\n")
-        f.write("\n\n\n")
-</code></pre>
+        f.write(resumen + "\n\n\n")</code></pre>
+
+                    <h3>Ejemplos de resultados obtenidos</h3>
+
+                    <p>
+                        <strong>González Santocildes, Asier</strong><br>
+                        Asier es graduado en un doble grado de Ingeniería Informática e Ingeniería Electrónica, además
+                        de contar con un Máster en Computación y Sistemas Inteligentes. Actualmente se dedica a la
+                        investigación y docencia en el Instituto Tecnológico de DeustoTech y en la Universidad de
+                        Deusto,
+                        con experiencia en energías renovables y ciberseguridad.
+                    </p>
+
+                    <p>
+                        <strong>Goti Elordi, Aitor</strong><br>
+                        Aitor Goti Elordi es Ingeniero en Organización Industrial y doctor en Ingeniería por la
+                        Universidad Politécnica de Valencia. Actualmente es profesor en la Universidad de Deusto en
+                        Bilbao,
+                        donde se especializa en Tecnologías Industriales, Organización Industrial, logística y sistemas
+                        de información.
+                    </p>
+
+                    <p>
+                        <strong>Guenaga Gómez, María Luz</strong><br>
+                        María Luz Guenaga es doctora en Ingeniería Informática, profesora titular y líder en la línea
+                        estratégica de Vocaciones STEAM. Destaca por su trayectoria investigadora en tecnología
+                        educativa
+                        y educación STEM, además de haber coordinado y participado en numerosos proyectos de I+D+i a
+                        nivel
+                        nacional e internacional.
+                    </p>
+
+                    <p>
+                        <strong>Guerrero Tamayo, Ana</strong><br>
+                        Ana es Ingeniera Superior en Electrónica y Automática Industrial, con un Máster en Gestión de
+                        Empresas y un doctorado en Ingeniería para la Sociedad de la Información y Desarrollo
+                        Sostenible.
+                        Su trayectoria combina docencia e investigación en áreas como la genómica y el análisis de
+                        datos,
+                        junto con una destacada formación musical como pianista repertorista.
+                    </p>
+
+                    <p>
+                        <strong>Hameed, Zabit</strong><br>
+                        Zabit Hameed se doctoró en Ingeniería para la Sociedad de la Información y el Desarrollo
+                        Sostenible en la Universidad de Deusto en 2023. Actualmente es profesor ayudante e investigador
+                        del grupo "eVida", centrando su trabajo en la aplicación de inteligencia artificial en el ámbito
+                        de la salud.
+                    </p>
+
+                    <p>
+                        <strong>Hernández Jayo, Unai</strong><br>
+                        Unai Hernández es Ingeniero de Telecomunicaciones y Doctor en Ingeniería Informática y
+                        Telecomunicación por la Universidad de Deusto. Actualmente es profesor y Director del Máster
+                        Universitario en Automática, Electrónica y Control Industrial, y su investigación se centra en
+                        el e-Learning y el desarrollo de laboratorios remotos.
+                    </p>
                 </section>
 
                 <!-- ================= VALORACIÓN ================= -->
@@ -128,8 +178,12 @@ for h in hrefs:
                         <h2>2. Valoración de la práctica</h2>
                         <span class="chip"><b>Opinión</b> utilidad y dificultad</span>
                     </div>
-                    <p> Practica bastante divertida y sencilla. 
-                        </p>
+
+                    <p>
+                        Esta práctica ha resultado bastante entretenida y fácil de seguir. Me ha parecido útil porque
+                        combina técnicas de web scraping con el uso de modelos de lenguaje, permitiendo automatizar la
+                        extracción y el resumen de información de forma sencilla.
+                    </p>
                 </section>
 
             </div>
