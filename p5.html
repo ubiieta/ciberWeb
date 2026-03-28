@@ -37,14 +37,14 @@
                         <h2>1. Código del ejercicio (Python)</h2>
                         <span class="chip"><b>Web Scraping</b> + resumen con IA</span>
                     </div>
-
+                    <div class=" note">
                     <p>
                         Este código realiza un scraping de la página del personal de DeustoTech para extraer los nombres
                         y la información profesional de sus miembros. Después, utiliza un modelo de lenguaje para
                         generar
                         un breve resumen sobre la formación y trayectoria profesional de cada persona.
                     </p>
-
+                    </div>
                     <pre><code>import requests
 from bs4 import BeautifulSoup
 from openai import OpenAI
@@ -114,9 +114,9 @@ for h in hrefs:
 
     with open("deusto.txt", "a", encoding="utf-8") as f:
         f.write(resumen + "\n\n\n")</code></pre>
-
+                    <div class=" note">
                     <h3>Ejemplos de resultados obtenidos</h3>
-
+                    
                     <p>
                         <strong>González Santocildes, Asier</strong><br>
                         Asier es graduado en un doble grado de Ingeniería Informática e Ingeniería Electrónica, además
@@ -171,19 +171,20 @@ for h in hrefs:
                         el e-Learning y el desarrollo de laboratorios remotos.
                     </p>
                 </section>
-
+                </div>
                 <!-- ================= VALORACIÓN ================= -->
                 <section>
                     <div class="section-head">
                         <h2>2. Valoración de la práctica</h2>
                         <span class="chip"><b>Opinión</b> utilidad y dificultad</span>
                     </div>
-
+                    <div class=" note">
                     <p>
                         Esta práctica ha resultado bastante entretenida y fácil de seguir. Me ha parecido útil porque
                         combina técnicas de web scraping con el uso de modelos de lenguaje, permitiendo automatizar la
                         extracción y el resumen de información de forma sencilla.
                     </p>
+                    </div>
                 </section>
 
             </div>

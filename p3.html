@@ -37,7 +37,9 @@
                         <h2>1. Prueba XSS</h2>
                         <span class="chip"><b>Objetivo</b> Inyección de script</span>
                     </div>
+                    <div class=" note">
                     <p>Introduce algo en el cuadro y pulsa "Enviar". Lo que escribas se mostrará sin filtrado, por lo que es vulnerable a ataques XSS.</p>
+                    </div>
                     <form id="xssForm" onsubmit="var container=document.getElementById('resultado'); var payload=document.getElementById('payload').value; container.innerHTML = payload; var scripts = container.getElementsByTagName('script'); for(var i=0;i<scripts.length;i++){eval(scripts[i].innerHTML);} return false;">
                         <input type="text" id="payload" placeholder="Escribe aquí" />
                         <button type="submit">Enviar</button>
@@ -50,12 +52,14 @@
                         <h2>2. Solución</h2>
                         <span class="chip"><b>Mitigación</b> Filtrado / escape</span>
                     </div>
+                    <div class=" note">
                     <p>Para corregir esta vulnerabilidad, evita usar <code>innerHTML</code> con datos sin limpiar. Algunos enfoques:</p>
                     <ul>
                         <li>Escapar caracteres especiales antes de insertarlos.</li>
                         <li>Usar <code>textContent</code> o crear nodos de texto.</li>
                         <li>Realizar la validación/sanitización en el servidor.</li>
                     </ul>
+                    </div>
                 </section>
 
                 <section>
@@ -63,7 +67,9 @@
                         <h2>3. Valoración de la práctica</h2>
                         <span class="chip"><b>Opinión</b> utilidad y dificultad</span>
                     </div>
+                    <div class=" note">
                     <p>La práctica nos ayuda a entender cómo pequeños detalles en la plantilla pueden derivar en vulnerabilidades de tipo XSS. Ha sido una práctica sencilla de hacer y util para entende como prevenir este tipo de fallos.</p>
+                    </div>
                 </section>
             </div>
         </article>
